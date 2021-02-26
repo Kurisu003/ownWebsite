@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+
+$header:#D0EFFF;
+$textColor: #023A51;
+$highlightColor: #00B7EF;
+
+*{
+    margin: 0;
+}
+
+.header{
+    background-color: $header;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    height: 100px;
+    border-radius: 200px;
+    margin: 10px;
+    float: left;
+}
+
+.navigationParentDiv{
+    // background-color: blue;
+    display: inline-flex;
+    flex-wrap: wrap;
+    width: 80%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.navigationDiv{
+    // background-color: orange;
+    width: 150px;
+    height: 30px;
+    text-align: center;
+}
+
+
+.linkTree{
+    // background-color: red;
+    margin-right: 50px;
+}
+
+.navButton{
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    font-size: x-large;
+    color: $textColor;
+}
+
+.noUnderline{
+    text-decoration: none;
+}
+
+.blueOnHover{
+    :hover {
+        color:$highlightColor;
+    }
+}

@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,OAAO,CAAC,+EAAI;AAOZ,AAAA,OAAO,CAAA;EACH,KAAK,EAAE,IAAI;EACX,gBAAgB,EAAE,KAAK;EACvB,OAAO,EAAE,YAAY;CACxB",
+    "sources": [
+        "qualificationsStyle.scss"
+    ],
+    "names": [],
+    "file": "qualificationsStyle.css"
+}

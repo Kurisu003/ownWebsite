@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap");
+* {
+  margin: 0;
+}
+
+.header {
+  background-color: #D0EFFF;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.logo {
+  height: 100px;
+  border-radius: 200px;
+  margin: 10px;
+  float: left;
+}
+
+.navigationParentDiv {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 80%;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navigationDiv {
+  width: 150px;
+  height: 30px;
+  text-align: center;
+}
+
+.linkTree {
+  margin-right: 50px;
+}
+
+.navButton {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: bold;
+  font-size: x-large;
+  color: #023A51;
+}
+
+.noUnderline {
+  text-decoration: none;
+}
+
+.blueOnHover :hover {
+  color: #00B7EF;
+}
+/*# sourceMappingURL=style.css.map */

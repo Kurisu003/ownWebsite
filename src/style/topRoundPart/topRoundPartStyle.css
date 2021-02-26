@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap");
+.parent {
+  width: 100%;
+  background-color: white;
+  display: inline-block;
+}
+
+.topLeftCircle {
+  background-color: #D0EFFF;
+  width: 10%;
+  height: 50px;
+  border-bottom-left-radius: 999px;
+  display: inline-block;
+}
+
+.topMiddle {
+  background-color: #D0EFFF;
+  height: 50px;
+  width: 80%;
+  display: inline-block;
+}
+
+.topRight {
+  background-color: #D0EFFF;
+  height: 100px;
+  width: 10%;
+  display: inline-block;
+}
+
+.topRightCircle {
+  background-color: white;
+  height: 50px;
+  width: 10%;
+  position: absolute;
+  top: 170px;
+  right: 0px;
+  border-top-right-radius: 999px;
+}
+/*# sourceMappingURL=topRoundPartStyle.css.map */
