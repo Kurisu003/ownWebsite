@@ -2,6 +2,7 @@ import React from 'react'
 
 import '../../style/Header/MobilHeader.css'
 import '../../style/Header/PcHeader.css'
+import '../../style/Header/Header.css'
 import TopRoundPart from '../Assets/TopRoundPart'
 import {isMobile} from 'react-device-detect';
 
@@ -51,9 +52,151 @@ function HeaderCopy(){
         }
     }
 
-    
-    if (isMobile || windowWidth <= 1020) {
-        return(
+
+    return(
+        <div id='headerWrapper'>
+
+            <div id='navPc' className='navBar'>
+                <p>Fuck me fuck boi!</p>
+            </div>
+
+
+            <div id='navMobile' className='navBar'>
+                <div style={{marginBottom: 100}}>
+                    <div 
+                        id="leftCircle"
+                        className="leftCircle"
+                    >
+                        &nbsp;
+                    </div>
+                    <div 
+                        id="middleStrip"
+                        className="middleStrip"
+                    >
+                        &nbsp;
+                    </div>
+                    <div 
+                        id="rightStrip"
+                        className="rightStrip"
+                    >
+                        &nbsp;
+                    </div>
+                    <div 
+                        id="rightCircle"
+                        className="rightCircle"
+                    >
+                        &nbsp;
+                    </div>
+
+                    <div 
+                        className="homeParent">
+                        
+                        <img 
+                            className="newLogo"
+                            src="https://cdn.discordapp.com/attachments/806161925163581531/815674562330755153/HuskyLogo.png"></img>
+
+                        {/* Displays Menu in the middle aka. actual Menu part */}
+                        <div 
+                            id="nav"
+                            className={isMenuOpen ? "open" : ""}>
+                            
+                            <Link
+                                to="/Home"
+                                className="noUnderline blueOnHover"
+                            >
+                                <div 
+                                    className={isMenuOpen ? "MenuPoint" : "none"}>
+
+                                    <p 
+                                        className="MenuPointText"
+                                        id="home"
+                                        onClick={ () => clickHandler('home')}
+                                    >
+                                        Home
+                                    </p>
+                                </div>
+                            </Link>
+
+                            <Link
+                                to="/Projects"
+                                className="noUnderline blueOnHover"
+                            >
+                                <div 
+                                    className={isMenuOpen ? "MenuPoint" : "none"}>
+                                        
+                                    <p 
+                                        className="MenuPointText"
+                                        id="projects"
+                                        onClick={ () => clickHandler('projects')}>
+                                        Projects
+                                    </p>
+                                </div>
+                            </Link>
+
+                            <Link
+                                to="/Qualifications"
+                                className="noUnderline blueOnHover"
+                            >
+
+                                <div 
+                                    className={isMenuOpen ? "MenuPoint" : "none"}>
+
+                                    <p 
+                                        className="MenuPointText"
+                                        id="qualifications"
+                                        onClick={ () => clickHandler('qualifications')}>
+                                        Qualifications
+                                    </p>
+                                </div>
+                            </Link>
+
+                            <Link
+                                to="/Contact"
+                                className="noUnderline blueOnHover"
+                            >
+                                <div 
+                                    className={isMenuOpen ? "MenuPoint" : "none"}>
+
+                                    <p 
+                                        className="MenuPointText"
+                                        id="contact"
+                                        onClick={ () => clickHandler('contact')}>
+                                        Contact
+                                    </p>
+                                </div>
+                            </Link>
+
+                            <Link
+                                to="/Linktree"
+                                className="noUnderline blueOnHover"
+                            >
+                                <div 
+                                    className={isMenuOpen ? "MenuPoint" : "none"}>
+
+                                    <p 
+                                        className="MenuPointText"
+                                        id="linktree"
+                                        onClick={ () => clickHandler('linktree')}
+                                    >
+                                        Linktree
+                                    </p>
+                                </div>
+                            </Link>
+                        </div>
+
+                        <Menu 
+                            id="Menu"
+                            color="black"
+                            size={80}
+                            onClick={ () => menuClickHandler()}
+                        />
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    )
+        /*return(
             <div style={{marginBottom: 100}}>
                 <div 
                     id="leftCircle"
@@ -87,7 +230,7 @@ function HeaderCopy(){
                         className="newLogo"
                         src="https://cdn.discordapp.com/attachments/806161925163581531/815674562330755153/HuskyLogo.png"></img>
 
-                    {/* Displays Menu in the middle aka. actual Menu part*/}
+                    {/!* Displays Menu in the middle aka. actual Menu part*!/}
                     <div 
                         id="nav"
                         className={isMenuOpen ? "open" : ""}>
@@ -192,9 +335,7 @@ function HeaderCopy(){
         <div 
             className="header">
         <div>
-           <img  
-                className="logo"
-                alt=""
+           <img className="logo" alt=""
                 src="https://cdn.discordapp.com/attachments/806161925163581531/815674562330755153/HuskyLogo.png"></img>
         </div>
 
@@ -294,7 +435,7 @@ function HeaderCopy(){
         </div>
         <TopRoundPart></TopRoundPart>
     </div>
-    )
+    )*/
 }
 
 export default HeaderCopy

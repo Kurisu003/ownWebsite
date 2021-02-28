@@ -1,0 +1,20 @@
+#navPc {
+  display: block;
+}
+
+#navMobile {
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  #navPc {
+    display: none;
+  }
+  #navMobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=Header.css.map */
