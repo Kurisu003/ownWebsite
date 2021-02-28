@@ -4,9 +4,78 @@ $header:#D0EFFF;
 $textColor: #023A51;
 $highlightColor: #00B7EF;
 
-
-.parent{
+#parent.parent{
     width: 100%;
-    background-color: white;
-    display: inline-block;
+    // background-color: orange;
+    
+    display: flex;
+    justify-content: center;
+}
+
+#infoContainer.infoContainer{
+    width: 80%;
+    padding-bottom: 50px;
+    padding-top: 50px;
+    border-radius: 30px;
+    background-color: #023A51;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#imgContainer{
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#personalImage.img{
+    border-radius: 999px;
+    margin-top: 20px;
+}
+
+#name{
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.text{
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+}
+
+#textDiv{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#title{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#text{
+    font-size: 20px;
+    font-weight: bold;
+    width: 250px;
+}
+
+.contactButton{
+    color: white;
+    text-decoration: none;
+    background-color: $highlightColor;
+
+    width: 150px;
+    height: 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 20px;
+    border-radius: 999px;
 }
