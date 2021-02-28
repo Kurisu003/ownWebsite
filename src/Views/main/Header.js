@@ -29,7 +29,7 @@ function HeaderCopy(){
 
     function clickHandler(attr, platform){
         
-        let primColor = 'white';
+        let primColor = 'black';
         let secColor  = '#023A51';
         
         if(platform === 'pc'){
@@ -57,12 +57,116 @@ function HeaderCopy(){
         <div id='headerWrapper'>
 
             <div id='navPc' className='navBar'>
-                <p>Fuck me fuck boi!</p>
+                <div>
+                    <div 
+                        className="header">
+                    <div>
+                    <img className="logo" alt=""
+                            src="https://cdn.discordapp.com/attachments/806161925163581531/815674562330755153/HuskyLogo.png"></img>
+                    </div>
+
+
+                    <div 
+                        className="navigationParentDiv">
+
+                        <div 
+                            className="navigationDiv">
+
+                            <Link
+                                to="/Home"
+                                className="noUnderline blueOnHover"
+                            >
+
+                                <p 
+                                    className="navButton blueOnHover"
+                                    id="home"
+                                    onClick={ () => clickHandler('home', 'pc')}>
+                                    Home
+                                </p>
+
+                            </Link>
+                        </div>
+
+                        <div 
+                            className="navigationDiv">
+                            <Link
+                                to="/Projects"
+                                className="noUnderline blueOnHover"
+                            >
+
+                                <p 
+                                    className="navButton blueOnHover"
+                                    id="projects"
+                                    onClick={ () => clickHandler('projects', 'pc')}>
+                                    Projekte
+                                </p>
+
+                            </Link>
+                        </div>
+
+                        <div 
+                            className="navigationDiv">
+
+                            <Link
+                                to="/Qualifications"
+                                className="noUnderline blueOnHover"
+                            >
+
+                                <p 
+                                    className="navButton blueOnHover"
+                                    id="qualifications"
+                                    onClick={ () => clickHandler('qualifications', 'pc')}>
+                                    Qualifikationen
+                                </p>
+
+                            </Link>
+                        </div>
+
+                        <div 
+                            className="navigationDiv">
+
+                            <Link
+                                to="/Contact"
+                                className="noUnderline blueOnHover"
+                            >
+
+                                <p 
+                                    className="navButton blueOnHover"
+                                    id="contact"
+                                    onClick={ () => clickHandler('contact', 'pc')}>
+                                    Kontakt
+                                </p>
+
+                            </Link>
+                        </div>
+                    </div>
+
+                    <div 
+                        className="linkTree">
+
+                        <Link
+                            to="/Linktree"
+                            className="noUnderline blueOnHover"
+                        >
+
+                            <p 
+                                className="navButton blueOnHover"
+                                id="linktree"
+                                onClick={ () => clickHandler('linktree', 'pc')}>
+                                Linktree
+                            </p>
+
+                        </Link>
+                    </div>
+                    </div>
+                    <TopRoundPart></TopRoundPart>
+                </div>
             </div>
 
 
+            {/* Mobile Version */}
             <div id='navMobile' className='navBar'>
-                <div style={{marginBottom: 100}}>
+                <div style={{marginBottom: 100, width: '100%'}}>
                     <div 
                         id="leftCircle"
                         className="leftCircle"
