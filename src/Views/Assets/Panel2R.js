@@ -13,8 +13,8 @@ function Panel2R(){
     console.log(windowWidth)
     if(!isMobile && windowWidth >= 961){
     return(
-        <div>
-            <div className="panelParent" style={{marginTop: topMargin + 'px'}}>
+        <div style={{marginBottom: 50}}>
+            <div className="panelParent" style={{marginTop: 10}}>
 
                 <div id="textDiv" className="textDiv">
                     <p 
@@ -23,7 +23,7 @@ function Panel2R(){
                     </p>
                     
                     <p
-                        className="text"  style={{marginTop: textTopMargin + 'px'}}>
+                        id="projectText" className="text"  style={{marginTop: textTopMargin + 'px'}}>
                         Ein Generator für Gutscheine mit <strong> QR-Code Generierung </strong> und Bildüberlagerung. 
                         2 Varianten, in <strong> Python </strong> und in <strong> Java </strong>
                     </p>
@@ -48,8 +48,8 @@ function Panel2R(){
         </div>
     )}
     return(
-        <div>
-            <div className="panelParent" style={{marginTop: topMargin + 'px'}}>
+        <div style={{marginBottom: 50}}>
+            <div className="panelParent" style={{marginTop: 10}}>
                 
                 <img
                     id="img"
@@ -66,7 +66,7 @@ function Panel2R(){
                     </p>
                     
                     <p
-                        className="text"  style={{marginTop: textTopMargin + 'px'}}>
+                        id="projectText" className="text"  style={{marginTop: textTopMargin + 'px'}}>
                         Ein Generator für Gutscheine mit <strong> QR-Code Generierung </strong> und Bildüberlagerung. 
                         2 Varianten, in <strong> Python </strong> und in <strong> Java </strong>
                     </p>

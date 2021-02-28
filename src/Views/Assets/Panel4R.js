@@ -14,8 +14,8 @@ function Panel4R(){
 
     if(!isMobile && windowWidth >= 1264){
     return(
-        <div>
-            <div className="panelParent" style={{marginTop: topMargin + 'px'}}>
+        <div style={{marginBottom: 50}}>
+            <div className="panelParent" style={{marginTop: 10}}>
 
                 <div id="textDiv" className="textDiv">
                     <p 
@@ -24,7 +24,7 @@ function Panel4R(){
                     </p>
                     
                     <p
-                        className="text"  style={{marginTop: textTopMargin + 'px'}}>
+                        id="projectText" className="text"  style={{marginTop: textTopMargin + 'px'}}>
                         Code zur Ausbesserung von Bitflips. Lange Version in <strong> Java </strong> und kurze
                         Version in <strong> Javascript </strong>
                     </p>
@@ -50,7 +50,7 @@ function Panel4R(){
     )}
     return(
         <div>
-            <div className="panelParent" style={{marginTop: topMargin + 'px'}}>
+            <div className="panelParent" style={{marginTop: 10}}>
                 
                 <img
                     id="img"
@@ -67,7 +67,7 @@ function Panel4R(){
                     </p>
                     
                     <p
-                        className="text"  style={{marginTop: textTopMargin + 'px'}}>
+                        id="projectText" className="text"  style={{marginTop: textTopMargin + 'px'}}>
                         Code zur Ausbesserung von Bitflips. Lange Version in <strong> Java </strong> und kurze
                         Version in <strong> Javascript </strong>
                     </p>

@@ -9,8 +9,8 @@ function Panel3(){
     const textTopMargin = isMobile ? 20 : 0;
 
     return(
-        <div>
-            <div className="panelParent" style={{marginTop: topMargin + 'px'}}>
+        <div style={{marginBottom: 50}}>
+            <div className="panelParent" style={{marginTop: 10}}>
                 
                 <img
                     id="img"
@@ -27,7 +27,7 @@ function Panel3(){
                     </p>
                     
                     <p
-                        className="text"  style={{marginTop: textTopMargin + 'px'}}>
+                        id="projectText" className="text"  style={{marginTop: textTopMargin + 'px'}}>
                         Url Shortener in <strong> Java </strong> mit <strong> Hashmaps </strong> und <strong>26<sup>4</sup>
                         möglichen Urls</strong>
                     </p>

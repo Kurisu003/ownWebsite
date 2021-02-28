@@ -4,13 +4,12 @@ import {isMobile} from 'react-device-detect';
 
 function Panel1(){
 
-    const topMargin = isMobile ? 120 : 10;
     const maxHeight = isMobile ? 300 : 500;
     const textTopMargin = isMobile ? 20 : 0;
 
     return(
-        <div>
-            <div className="panelParent" style={{marginTop: topMargin + 'px'}}>
+        <div style={{marginBottom: 50}}>
+            <div className="panelParent" style={{marginTop: 10}}>
                 
                 <img
                     id="img"
@@ -27,7 +26,7 @@ function Panel1(){
                     </p>
                     
                     <p
-                        className="text"  style={{marginTop: textTopMargin + 'px'}}>
+                        id="projectText" className="text"  style={{marginTop: textTopMargin + 'px'}}>
                         Lösung zum TSP. Hier werden
                         mehrere, auf einem <strong> Backend Java-Server </strong> laufende, Algorithmen verwendet, 
                         welche auf einer mit <strong> HTML, Bootstrap </strong> und <strong> CSS </strong> wundervoll 

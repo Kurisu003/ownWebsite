@@ -8,10 +8,19 @@ import { Telephone } from 'react-bootstrap-icons';
 
 function Contact(){
     return(
-        <div id="parent" className="parent" style={{marginTop: isMobile ? 120 : 20}}>
-            <div id="infoContainer" className="infoContainer" style={{height: 'auto'}}>
+        <div 
+            id="parent"
+            className="parent"
+            style={{marginTop: isMobile ? 120 : 20}}
+        >
+        
+            <div 
+                id="infoContainer" 
+                className="infoContainer" 
+                style={{height: 'auto'}}
+            >
                 <div 
-                    id="imgContainer textDiv"
+                    id="imgContainer"
                     style={{width: isMobile ? 150 : 200}}
                 >
                     <img 
@@ -19,23 +28,74 @@ function Contact(){
                         className="img"
                         style={{width: isMobile ? 150 : 200, height: isMobile ? 150 : 200}} 
                         src="https://cdn.discordapp.com/attachments/806161925163581531/815648116119306241/unknown.png"></img>
-                    <p id="name">Daniel Bosin</p>
+                    
+                    <p 
+                        id="name"
+                    >
+                        Daniel Bosin
+                    </p>
+
                 </div>
 
-                <div id="textDiv">
-                    <p id="title" className="text">Fragen?</p>
-                    <p id="text" className="text">Melde dich jederzeit bei mir.</p>
+                <div 
+                    id="textDiv"
+                >
+                    <p 
+                        id="title"
+                        className="text"
+                    >
+                        Fragen?
+                    </p>
+                    
+                    <p 
+                        id="text"
+                        className="text"
+                    >
+                        Melde dich jederzeit bei mir.
+                    </p>
+
                 </div>
 
-                <div id="textDiv">
-                    <div id="contactEmail" className="contactButton text">
-                        <Envelope id="Menu" color="white" size={30}></Envelope>
-                        <a style={{paddingLeft: 5}}>E-Mail</a>
+                <div 
+                    id="textDiv"
+                >
+                    
+                    <div 
+                        id="contactEmail"
+                        className="contactButton text"
+                    >
+                        
+                        <Envelope 
+                            id="Menu" 
+                            color="white" 
+                            size={30}
+                        />
+
+                        <a 
+                            style={{paddingLeft: 5}}
+                        >
+                            E-Mail
+                        </a>
+                    
                     </div>
 
-                    <div id="contactEmail" className="contactButton text">
-                        <Telephone id="Menu" color="white" size={30}></Telephone>
-                        <a style={{paddingLeft: 5}}>Phone</a>
+                    <div 
+                        id="contactEmail"
+                        className="contactButton text"
+                    >
+
+                        <Telephone 
+                            id="Menu"
+                            color="white"
+                            size={30}
+                        />
+
+                        <a 
+                            style={{paddingLeft: 5}}
+                        >
+                            Phone
+                        </a>
+                        
                     </div>
                 </div>
             </div>

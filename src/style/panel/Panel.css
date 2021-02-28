@@ -47,12 +47,13 @@
   vertical-align: middle;
 }
 
-.text {
+#projectText.text {
   width: 90%;
   font-family: 'Quicksand', sans-serif;
   font-size: 25px;
   word-wrap: break-word;
   text-align: center;
+  color: black;
 }
 
 .linkDiv {
