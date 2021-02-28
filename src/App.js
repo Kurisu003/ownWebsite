@@ -3,10 +3,10 @@ import {
 	Switch,
 	Route}
 from "react-router-dom"
-import './Components/CounterExample'
+
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 import Navigation from './Components/Navigation';
-
-
 import Header from './Views/main/Header'
 import Home from './Views/main/Home'
 import Projects from './Views/main/Projects'
