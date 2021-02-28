@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+
+$header:#D0EFFF;
+$textColor: #023A51;
+$highlightColor: #00B7EF;
+
+
+#text1div.text1div{
+    padding-top: 20px;
+    width: 100%;
+    // background-color: orange;
+    // text-align: center;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.titel{
+    height: 50px;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bolder;
+    font-size: 60px;
+    // display: flex;
+    // align-items: center;
+}
+
+#titel2.titel{
+    font-size: 40px;
+    height: 40px;
+}
+
+.highlighted{
+    color: $highlightColor
+}
+
+.firstTextChild{
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+    padding-left: 2%;
+    padding-right: 2%;
+    max-width: 900px;
+}

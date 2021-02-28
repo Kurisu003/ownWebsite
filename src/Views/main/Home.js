@@ -1,5 +1,5 @@
 import React from 'react'
-import '../../style/home/homeStyleCopy.css'
+import '../../style/home/homeStyle.css'
 
 import {isMobile} from 'react-device-detect';
 
@@ -49,6 +49,20 @@ function Home(){
             </Carousel.Caption>
         </Carousel.Item>
     </Carousel>
+
+    <div id="text1div" className="text1div">
+        
+        <p id="titel" className="titel">Informatiker</p>
+        <p id="titel2" className="titel highlighted">Daniel Bosin</p>
+        
+        <p className="firstTextChild">
+            Junger, zielstrebiger, Student aus Südtirol mit mehrjähriger Erfahrung mit Full-Stack-Development und Sehnsucht nach Sillicon-Valley. 
+        </p>
+        
+        <p className="firstTextChild">
+            Meister in präziser Eigen-, sowie Teamarbeit
+        </p>
+    </div>
 
         {/* <div className="titleParent">
 
