@@ -4,6 +4,7 @@ $header:#D0EFFF;
 $textColor: #023A51;
 $highlightColor: #00B7EF;
 
+
 *{
     margin: 0;
 }
@@ -34,7 +35,9 @@ $highlightColor: #00B7EF;
 
 .navigationDiv{
     // background-color: orange;
-    width: 150px;
+    // width: 150px;
+    margin-left: 20px;
+    margin-right: 20px;
     height: 30px;
     text-align: center;
 }
@@ -59,5 +62,8 @@ $highlightColor: #00B7EF;
 .blueOnHover{
     :hover {
         color:$highlightColor;
+    }
+    :visited{
+        color: greenyellow;
     }
 }

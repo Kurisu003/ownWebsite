@@ -1,5 +1,5 @@
 import React from 'react'
-import '../style/topRoundPart/topRoundPartStyle.css'
+import '../../style/topRoundPart/topRoundPartStyle.css'
 
 function topRoundPart(){
     return(

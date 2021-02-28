@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+
+$header:#D0EFFF;
+$textColor: #023A51;
+$highlightColor: #00B7EF;
+
+
+.homeParent{
+    background-color: $header;
+    width: 100%;
+    height: 100px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#nav {
+	display: none;
+}
+#nav.open {
+    display: inline-block;
+	height: 350px;
+	width: 200px;
+
+    position: relative;
+    z-index: 999;
+
+    margin-top: 250px;
+
+    display: inline-block;
+    text-align: center;
+
+    border-radius: 20px;
+
+    background-color: $header;
+}
+
+.MenuPoint{
+    margin-top: 15px;
+    width: 180px;
+    margin-left: 10px;
+    // padding-top: 10px;
+    height: 50px;
+    background-color: $highlightColor;
+    border-radius: 15px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.none{
+    display: none;
+}
+
+.MenuPointText{
+    font-size: 25px;
+    color: white;
+}
+
+.newLogo{
+    width: 100px;
+    height: 100px;
+    border-radius: 999px;
+}
+
+.div1{
+    background-color: lightblue;
+    width: 40%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#leftCircle.leftCircle{
+    position: absolute;
+    top: 100px;
+    left: 0;
+    height: 50px;
+    width: 13%;
+    border-bottom-left-radius: 200px;
+    background-color: $header;
+}
+
+#rightStrip.rightStrip{
+    position: absolute;
+    top: 100px;
+    right: 0;
+    height: 100px;
+    width: 13%;
+    background-color: $header;
+}
+
+#middleStrip.middleStrip{
+    position: absolute;
+    top: 100px;
+    right: 13%;
+    height: 50px;
+    width: 75%;
+    background-color: $header;
+}
+
+#rightCircle.rightCircle{
+    position: absolute;
+    right: 0;
+    top: 150px;
+    height: 50px;
+    width: 13%;
+    border-top-right-radius: 200px;
+    background-color: white;
+}
+
+@keyframes spin {
+    from {transform:rotate(0deg);}
+    to {transform:rotate(360deg);}
+}

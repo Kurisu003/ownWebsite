@@ -6,20 +6,19 @@ from "react-router-dom"
 import './Components/CounterExample'
 import Navigation from './Components/Navigation';
 
-import './style/style.css'
 
-import Header from './Views/Header'
-import Home from './Views/Home'
-import Projects from './Views/Projects'
-import Qualifications from './Views/Qualifications'
-import Contact from './Views/Contact'
-import LinkTree from './Views/Linktree'
+import Header from './Views/main/Header'
+import Home from './Views/main/HomeCopy'
+import Projects from './Views/main/Projects'
+import Qualifications from './Views/main/Qualifications'
+import Contact from './Views/main/Contact'
+import LinkTree from './Views/main/Linktree'
 
 function App() {
   return (
 	<div className="App h-100" style={{backgroundColor: 'white'}}>
 		<Router>
-			<Navigation />
+			<Navigation/>
 
 			<Header></Header>
 

@@ -1,6 +1,6 @@
 import React from 'react'
-import '../style/linkTree/linkTreeStyle.css'
-import TopRoundPart from './TopRoundPart'
+import '../../style/linkTree/linkTreeStyle.css'
+import TopRoundPart from '../Assets/TopRoundPart'
 
 function Linktree(){
     return(

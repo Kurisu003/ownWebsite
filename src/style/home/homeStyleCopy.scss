@@ -5,6 +5,14 @@ $textColor: #023A51;
 $highlightColor: #00B7EF;
 
 
+.highlighted{
+    color: $highlightColor
+}
+
+body{
+    background-color: white;
+}
+
 .parent{
     width: 100%;
     background-color: white;
@@ -12,16 +20,29 @@ $highlightColor: #00B7EF;
 }
 
 .titleParent{
-    background-color: orange;
     width: 100%;
     height: 50px;
     margin-left: 150px;
-
+    // display: flex;
+    align-items: center;
 }
 
 .titleChild{
     height: 50px;
     font-family: 'Quicksand', sans-serif;
     font-weight: bolder;
+    font-size: 60px;
+    display: flex;
     align-items: center;
+}
+
+.firstTextParent{
+    width: 700px;
+    margin-left: 150px;
+}
+
+.firstTextChild{
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    font-size: 30px;
 }
