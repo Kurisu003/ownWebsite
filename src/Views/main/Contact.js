@@ -6,8 +6,6 @@ function Contact(){
     return(
         <div className="parent">
 
-            <TopRoundPart></TopRoundPart>
-
         </div>
     )
 }

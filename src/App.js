@@ -8,7 +8,7 @@ import Navigation from './Components/Navigation';
 
 
 import Header from './Views/main/Header'
-import Home from './Views/main/HomeCopy'
+import Home from './Views/main/Home'
 import Projects from './Views/main/Projects'
 import Qualifications from './Views/main/Qualifications'
 import Contact from './Views/main/Contact'

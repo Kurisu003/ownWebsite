@@ -29,9 +29,9 @@ function Panel1(){
                     <p
                         className="text"  style={{marginTop: textTopMargin + 'px'}}>
                         Lösung zum TSP. Hier werden
-                        mehrere, auf einem <strong> Backend Java-Server </strong> laufende, Algorithmen in verwendet, 
+                        mehrere, auf einem <strong> Backend Java-Server </strong> laufende, Algorithmen verwendet, 
                         welche auf einer mit <strong> HTML, Bootstrap </strong> und <strong> CSS </strong> wundervoll 
-                        gestalteten Website mit <strong> Javascript </strong> abgerufen werden
+                        gestalteten Website mit <strong> Javascript </strong> abgerufen werden.
                     </p>
 
                     <div className="linkDiv">

@@ -26,7 +26,7 @@ function Panel4R(){
                     <p
                         className="text"  style={{marginTop: textTopMargin + 'px'}}>
                         Code zur Ausbesserung von Bitflips. Lange Version in <strong> Java </strong> und kurze
-                        version in <strong> Javascript </strong>
+                        Version in <strong> Javascript </strong>
                     </p>
 
                     <div className="linkDiv">
@@ -68,8 +68,8 @@ function Panel4R(){
                     
                     <p
                         className="text"  style={{marginTop: textTopMargin + 'px'}}>
-                        Ein Generator für Skytrek Gutscheine mit <strong> QR-Code generierung </strong> und Bild
-                        überlagerung. 2 Varianten, in <strong> Python </strong> und in <strong> Java </strong>
+                        Code zur Ausbesserung von Bitflips. Lange Version in <strong> Java </strong> und kurze
+                        Version in <strong> Javascript </strong>
                     </p>
 
                     <div className="linkDiv">

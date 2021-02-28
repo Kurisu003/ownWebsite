@@ -5,9 +5,7 @@ import TopRoundPart from '../Assets/TopRoundPart'
 function Qualifications(){
     return(
         <div className="parent">
-
-            <TopRoundPart></TopRoundPart>
-
+            
         </div>
     )
 }

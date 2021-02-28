@@ -6,8 +6,6 @@ function Linktree(){
     return(
         <div className="parent">
 
-            <TopRoundPart></TopRoundPart>
-
         </div>
     )
 }

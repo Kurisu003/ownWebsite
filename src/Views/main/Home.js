@@ -1,12 +1,9 @@
 import React from 'react'
 import '../../style/home/homeStyleCopy.css'
-import TopRoundPart from '../Assets/TopRoundPart'
 
 function Home(){
     return(
         <div className="parent">
-
-            <TopRoundPart></TopRoundPart>
 
             <div className="titleParent">
 
@@ -19,7 +16,8 @@ function Home(){
 
             </div>
             <br></br>
-            <br></br><br></br>
+            <br></br>
+            <br></br>
             <br></br>
             <div className="firstTextParent">
 

@@ -164,7 +164,7 @@ function HeaderCopy(){
                     className="noUnderline blueOnHover"
                 >
 
-                    <p className="navButton"
+                    <p className="navButton blueOnHover"
                     id="home"
                     onClick={ () => clickHandler('home', 'pc')}>
                         Home
@@ -179,7 +179,7 @@ function HeaderCopy(){
                     className="noUnderline blueOnHover"
                 >
 
-                    <p className="navButton"
+                    <p className="navButton blueOnHover"
                     id="projects"
                     onClick={ () => clickHandler('projects', 'pc')}>
                         Projekte
@@ -194,7 +194,7 @@ function HeaderCopy(){
                     className="noUnderline blueOnHover"
                 >
 
-                    <p className="navButton"
+                    <p className="navButton blueOnHover"
                     id="qualifications"
                     onClick={ () => clickHandler('qualifications', 'pc')}>
                         Qualifikationen
@@ -206,10 +206,10 @@ function HeaderCopy(){
             <div className="navigationDiv">
                 <Link
                     to="/Contact"
-                    className="noUnderline blueOnHover"
+                    className="noUnderline"
                 >
 
-                    <p className="navButton"
+                    <p className="navButton blueOnHover"
                     id="contact"
                     onClick={ () => clickHandler('contact', 'pc')}>
                         Kontakt
@@ -222,10 +222,10 @@ function HeaderCopy(){
         <div className="linkTree">
             <Link
                 to="/Linktree"
-                className="noUnderline blueOnHover"
+                className="noUnderline"
             >
 
-                <p className="navButton"
+                <p className="navButton blueOnHover"
                     id="linktree"
                     onClick={ () => clickHandler('linktree', 'pc')}>
                     Linktree
