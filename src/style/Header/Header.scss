@@ -1,9 +1,20 @@
 #navPc {
 	display: block;
 }
+
+#headerWrapper{
+}
+
+#overlay{
+    display: inline-flex;
+    position: absolute;
+    right: 0;
+  }
+
 #navMobile {
 	display: none;
 }
+
 @media only screen and (max-width: 1030px) {
 	#navPc {
 		display: none;

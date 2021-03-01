@@ -7,11 +7,11 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 #nav {
@@ -21,19 +21,20 @@
 #nav.open {
   height: 350px;
   width: 100%;
-  position: relative;
+  position: absolute;
   z-index: 999;
   margin-top: 250px;
   display: inline-block;
   text-align: center;
   border-radius: 20px;
   background-color: #D0EFFF;
+  top: -150px;
 }
 
 .MenuPoint {
   margin-top: 15px;
-  width: 180px;
-  margin-left: 10px;
+  margin-left: 2vw;
+  margin-right: 2vw;
   height: 50px;
   background-color: #00B7EF;
   border-radius: 15px;
@@ -41,11 +42,11 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   padding-top: 12px;
 }
 
@@ -71,11 +72,11 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 #leftCircle.leftCircle {

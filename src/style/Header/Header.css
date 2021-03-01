@@ -2,6 +2,14 @@
   display: block;
 }
 
+#overlay {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  position: absolute;
+  right: 0;
+}
+
 #navMobile {
   display: none;
 }

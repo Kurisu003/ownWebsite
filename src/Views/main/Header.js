@@ -59,7 +59,7 @@ function HeaderCopy(){
             <div id='navPc' className='navBar'>
                 <div>
                     <div 
-                        className="header">
+                        className="header" style={{width:'100%'}}>
                     <div>
                     <img className="logo" alt=""
                             src="https://cdn.discordapp.com/attachments/806161925163581531/815674562330755153/HuskyLogo.png"></img>
@@ -166,7 +166,7 @@ function HeaderCopy(){
 
             {/* Mobile Version */}
             <div id='navMobile' className='navBar'>
-                <div style={{marginBottom: 100, width: '100%'}}>
+                <div style={{marginBottom: 100, width: '100vw'}}>
                     <div 
                         id="leftCircle"
                         className="leftCircle"
@@ -288,12 +288,17 @@ function HeaderCopy(){
                             </Link>
                         </div>
 
-                        <Menu 
-                            id="Menu"
-                            color="black"
-                            size={80}
-                            onClick={ () => menuClickHandler()}
-                        />
+                        <div id='overlay'>
+                            <Menu
+                                id="Menu"
+                                color="black"
+                                size={80}
+                                onClick={ () => menuClickHandler()}
+                            />
+                        </div>
+                        <div id='overlayMenu'>
+
+                        </div>
 
                     </div>
                 </div>
