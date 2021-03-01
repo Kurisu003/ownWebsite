@@ -18,22 +18,22 @@ function Projects(){
 
             {/* <div className="imgDiv">
                 <img className="img" src="https://cdn.discordapp.com/attachments/613625981219110914/814968350757224519/Paketdienst.png"></img>
-                
+
                 <div>
-                    <p 
+                    <p
                         className="title">
                         Traveling Salesman
                     </p>
-                    <p 
+                    <p
                         className="text">
                         Hier hat man eine bestimmte Anzahl von Knoten, welche man jeweils einmal besuchen muss.
                         Der Startpunkt ist gleichzeitig der Endpunkt und wird deshalb zweimal besucht. Hier werden
-                        mehrere, auf einem <strong> Backend Java-Server </strong> laufende, Algorithmen in verwendet, 
-                        welche auf einer mit <strong> HTML, Bootstrap </strong> und <strong> CSS </strong> wundervoll 
+                        mehrere, auf einem <strong> Backend Java-Server </strong> laufende, Algorithmen in verwendet,
+                        welche auf einer mit <strong> HTML, Bootstrap </strong> und <strong> CSS </strong> wundervoll
                         gestalteten Website mit <strong> Javascript </strong> abgerufen werden
                     </p>
                     <div className="linkDiv">
-                        <a 
+                        <a
                             href="http://paketdienst.tk"
                             className="link">
                             Website
