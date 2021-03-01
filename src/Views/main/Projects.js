@@ -1,19 +1,35 @@
 import React from 'react'
 import '../../style/projects/projectsStyle.css'
 
-import Panel1 from '../Assets/Panel1L'
-import Panel2 from '../Assets/Panel2R'
-import Panel3 from '../Assets/Panel3L'
-import Panel4 from '../Assets/Panel4R'
+import Panel1L from '../Assets/Panel1L'
+import Panel2R from '../Assets/Panel2R'
+import Panel2L from '../Assets/Panel2L'
+import Panel3L from '../Assets/Panel3L'
+import Panel4R from '../Assets/Panel4R'
+import Panel4L from '../Assets/Panel4L'
 
 function Projects(){
     return(
         <div className="parent">
 
-            <Panel1></Panel1>
-            <Panel2></Panel2>
-            <Panel3></Panel3>
-            <Panel4></Panel4>
+            <Panel1L></Panel1L>
+            
+            <div id='panel2Pc' className='panel'>
+                <Panel2R></Panel2R>
+            </div>
+            
+            <div id='panel2Mobile' className='panel'>
+                <Panel2L></Panel2L>                
+            </div>
+            <Panel3L></Panel3L>
+
+            <div id='panel4Pc' className='panel'>
+                <Panel4R></Panel4R>
+            </div>
+            
+            <div id='panel4Mobile' className='panel'>
+                <Panel4L></Panel4L>                
+            </div>
             {/* <RightPanel1></RightPanel1> */}
 
             {/* <div className="imgDiv">

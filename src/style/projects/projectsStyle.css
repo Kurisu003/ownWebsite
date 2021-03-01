@@ -4,4 +4,38 @@
   background-color: white;
   display: inline-block;
 }
+
+#panel2Pc {
+  display: block;
+}
+
+#panel2Mobile {
+  display: none;
+}
+
+#panel4Pc {
+  display: block;
+}
+
+#panel4Mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 984px) {
+  #panel2Pc {
+    display: none;
+  }
+  #panel2Mobile {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 1284px) {
+  #panel4Pc {
+    display: none;
+  }
+  #panel4Mobile {
+    display: block;
+  }
+}
 /*# sourceMappingURL=projectsStyle.css.map */

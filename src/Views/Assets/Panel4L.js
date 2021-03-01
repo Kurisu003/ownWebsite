@@ -2,25 +2,35 @@ import React from 'react'
 import '../../style/panel/Panel.css'
 import {isMobile} from 'react-device-detect';
 
-function Panel2R(){
+function Panel4L(){
 
-    const maxHeight = isMobile ? 400 : 500;
-    const maxWidth = isMobile ? 240 : 300;
+    const maxHeight = isMobile ? 300 : 500;
+    const maxWidth = isMobile ? 400 : 600;
     const textTopMargin = isMobile ? 20 : 0;
+
+    
     return(
-        <div style={{marginBottom: 50}}>
+        <div>
             <div className="panelParent" style={{marginTop: 10}}>
+                
+                <img
+                    id="img"
+                    className="img"
+                    style={{maxHeight: maxHeight + "px", maxWidth: maxWidth + 'px'}}
+                    src="https://cdn.discordapp.com/attachments/814271639122477107/815518869367685130/florian-olivo-4hbJ-eymZ1o-unsplash.jpg"
+                >
+                </img>
 
                 <div id="textDiv" className="textDiv">
                     <p 
                         className="title">
-                        Gutschein Generator
+                        Hamming-Code
                     </p>
                     
                     <p
                         id="projectText" className="text"  style={{marginTop: textTopMargin + 'px'}}>
-                        Ein Generator für Gutscheine mit <strong> QR-Code Generierung </strong> und Bildüberlagerung. 
-                        2 Varianten, in <strong> Python </strong> und in <strong> Java </strong>
+                        Code zur Ausbesserung von Bitflips. Lange Version in <strong> Java </strong> und kurze
+                        Version in <strong> Javascript </strong>
                     </p>
 
                     <div className="linkDiv">
@@ -31,17 +41,9 @@ function Panel2R(){
                         </a>
                     </div>
                 </div>
-                 
-                <img
-                    id="img"
-                    className="img"
-                    style={{maxHeight: maxHeight + "px", maxWidth: maxWidth + 'px'}}
-                    src="https://cdn.discordapp.com/attachments/814271639122477107/815514477528612914/TagesKarteVorlage.png"
-                >
-                </img>
             </div>
         </div>
     )
 }
 
-export default Panel2R
+export default Panel4L
