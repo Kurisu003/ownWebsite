@@ -5,7 +5,7 @@ import {isMobile} from 'react-device-detect';
 
 function Qualifications(){
     return(
-        <div>
+        <div style={{backgroundColor: 'orange'}}>
 
         </div>
     )

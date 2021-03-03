@@ -8,7 +8,7 @@ function Panel1(){
     const textTopMargin = isMobile ? 20 : 0;
 
     return(
-        <div style={{marginBottom: 50}}>
+        <div style={{paddingTop: 50, paddingBottom: 50}}>
             <div className="panelParent" style={{marginTop: 10}}>
                 
                 <img

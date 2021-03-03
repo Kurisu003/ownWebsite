@@ -8,7 +8,7 @@ function Panel2R(){
     const maxWidth = isMobile ? 240 : 300;
     const textTopMargin = isMobile ? 20 : 0;
     return(
-        <div style={{marginBottom: 50}}>
+        <div style={{paddingTop: 50, paddingBottom: 50}}>
             <div className="panelParent" style={{marginTop: 10}}>
 
                 <div id="textDiv" className="textDiv">

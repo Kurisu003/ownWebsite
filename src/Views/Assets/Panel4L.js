@@ -10,7 +10,7 @@ function Panel4L(){
 
     
     return(
-        <div>
+        <div style={{paddingTop: 50, paddingBottom: 50}}>
             <div className="panelParent" style={{marginTop: 10}}>
                 
                 <img

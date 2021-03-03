@@ -14,7 +14,7 @@
   display: none;
 }
 
-@media only screen and (max-width: 1030px) {
+@media only screen and (max-width: 1037px) {
   #navPc {
     display: none;
   }

@@ -8,28 +8,35 @@ import Panel3L from '../Assets/Panel3L'
 import Panel4R from '../Assets/Panel4R'
 import Panel4L from '../Assets/Panel4L'
 
+import DividerBottomColor1 from '../Assets/DividerBottomColor1'
+import DividerTopColor1 from '../Assets/DividerTopColor1'
+
 function Projects(){
     return(
         <div className="parent">
+            <DividerTopColor1 />
+            <div style={{backgroundColor: '#97ddcd'}}>
+                <Panel1L></Panel1L>
+                
+                <div id='panel2Pc' className='panel'>
+                    <Panel2R></Panel2R>
+                </div>
+                
+                <div id='panel2Mobile' className='panel'>
+                    <Panel2L></Panel2L>                
+                </div>
+                <Panel3L></Panel3L>
 
-            <Panel1L></Panel1L>
-            
-            <div id='panel2Pc' className='panel'>
-                <Panel2R></Panel2R>
+                <div id='panel4Pc' className='panel'>
+                    <Panel4R></Panel4R>
+                </div>
+                
+                <div id='panel4Mobile' className='panel'>
+                    <Panel4L></Panel4L>                
+                </div>
             </div>
-            
-            <div id='panel2Mobile' className='panel'>
-                <Panel2L></Panel2L>                
-            </div>
-            <Panel3L></Panel3L>
 
-            <div id='panel4Pc' className='panel'>
-                <Panel4R></Panel4R>
-            </div>
-            
-            <div id='panel4Mobile' className='panel'>
-                <Panel4L></Panel4L>                
-            </div>
+            <DividerBottomColor1/>
             {/* <RightPanel1></RightPanel1> */}
 
             {/* <div className="imgDiv">

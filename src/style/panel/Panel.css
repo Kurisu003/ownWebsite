@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap");
 .panelParent {
   width: 100%;
   position: relative;
@@ -50,6 +50,7 @@
 #projectText.text {
   width: 90%;
   font-family: 'Quicksand', sans-serif;
+  font-weight: 500;
   font-size: 25px;
   word-wrap: break-word;
   text-align: center;
@@ -71,11 +72,14 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  text-decoration: none;
   background-color: #00B7EF;
 }
 
 .linkDiv:hover {
   background-color: #023A51;
+  -webkit-transition: background-color 200ms ease-in-out;
+  transition: background-color 200ms ease-in-out;
 }
 
 .link {
@@ -84,5 +88,10 @@
   font-size: 30px;
   font-weight: bold;
   font-family: 'Quicksand', sans-serif;
+}
+
+.link:hover {
+  text-decoration: none;
+  color: white;
 }
 /*# sourceMappingURL=Panel.css.map */

@@ -12,9 +12,8 @@ function Panel4R(){
 
     console.log(windowWidth)
 
-    if(!isMobile && windowWidth >= 1264){
     return(
-        <div style={{marginBottom: 50}}>
+        <div style={{paddingTop: 50, paddingBottom: 50}}>
             <div className="panelParent" style={{marginTop: 10}}>
 
                 <div id="textDiv" className="textDiv">
@@ -37,7 +36,7 @@ function Panel4R(){
                         </a>
                     </div>
                 </div>
-                 
+
                 <img
                     id="img"
                     className="img"
@@ -45,41 +44,6 @@ function Panel4R(){
                     src="https://cdn.discordapp.com/attachments/814271639122477107/815518869367685130/florian-olivo-4hbJ-eymZ1o-unsplash.jpg"
                 >
                 </img>
-            </div>
-        </div>
-    )}
-    return(
-        <div>
-            <div className="panelParent" style={{marginTop: 10}}>
-                
-                <img
-                    id="img"
-                    className="img"
-                    style={{maxHeight: maxHeight + "px", maxWidth: maxWidth + 'px'}}
-                    src="https://cdn.discordapp.com/attachments/814271639122477107/815518869367685130/florian-olivo-4hbJ-eymZ1o-unsplash.jpg"
-                >
-                </img>
-
-                <div id="textDiv" className="textDiv">
-                    <p 
-                        className="title">
-                        Hamming-Code
-                    </p>
-                    
-                    <p
-                        id="projectText" className="text"  style={{marginTop: textTopMargin + 'px'}}>
-                        Code zur Ausbesserung von Bitflips. Lange Version in <strong> Java </strong> und kurze
-                        Version in <strong> Javascript </strong>
-                    </p>
-
-                    <div className="linkDiv">
-                        <a 
-                            href="http://paketdienst.tk"
-                            className="link">
-                            Git-Hub
-                        </a>
-                    </div>
-                </div>
             </div>
         </div>
     )
