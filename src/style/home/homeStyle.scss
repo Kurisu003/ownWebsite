@@ -4,15 +4,29 @@ $header:#D0EFFF;
 $textColor: #023A51;
 $highlightColor: #00B7EF;
 
+#HomeParent{
+    // background-color: orange;
+    display: inline-flex;
+}
+
+#CarouselParent{
+    width: 68%;
+    margin-right: 2%;
+}
+
+#CarouselImage{
+    border-radius: 30px;
+}
 
 #text1div.text1div{
     padding-top: 20px;
-    width: 100%;
+    width: 30%;
+    margin-left: 2%;
     // background-color: orange;
     // text-align: center;
     display: inline-flex;
     flex-direction: column;
-    align-items: center;
+    // align-items: center;
     justify-content: center;
 }
 
@@ -37,9 +51,13 @@ $highlightColor: #00B7EF;
 .firstTextChild{
     font-family: 'Quicksand', sans-serif;
     font-weight: bold;
-    font-size: 30px;
-    text-align: center;
-    padding-left: 2%;
+    font-size: 20px;
+    // text-align: center;
+    // padding-left: 2%;
     padding-right: 2%;
     max-width: 900px;
+}
+
+#HomeMainButton{
+    border-radius: 999;
 }

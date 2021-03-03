@@ -1,7 +1,23 @@
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap");
+#HomeParent {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+#CarouselParent {
+  width: 68%;
+  margin-right: 2%;
+}
+
+#CarouselImage {
+  border-radius: 30px;
+}
+
 #text1div.text1div {
   padding-top: 20px;
-  width: 100%;
+  width: 30%;
+  margin-left: 2%;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -9,9 +25,6 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -36,10 +49,12 @@
 .firstTextChild {
   font-family: 'Quicksand', sans-serif;
   font-weight: bold;
-  font-size: 30px;
-  text-align: center;
-  padding-left: 2%;
+  font-size: 20px;
   padding-right: 2%;
   max-width: 900px;
+}
+
+#HomeMainButton {
+  border-radius: 999;
 }
 /*# sourceMappingURL=homeStyle.css.map */
