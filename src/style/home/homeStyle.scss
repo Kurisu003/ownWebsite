@@ -3,15 +3,32 @@
 $header:#D0EFFF;
 $textColor: #023A51;
 $highlightColor: #00B7EF;
+$hoverColor: #023A51;
 
 #HomeParent{
     // background-color: orange;
+    // display: inline-block;
+    // display: grid;
+    // grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
     display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 50px;
+    // margin: 10px 0
+    // padding-right: 30px;
 }
 
 #CarouselParent{
-    width: 68%;
-    margin-right: 2%;
+    width: 60vw;
+    min-width: 400px;
+    padding-left: 20px;
+    padding-right: 20px;
+    // margin-right: 2%;
+    // margin: 0;
+    // padding: 0;
+    // display: inline-block;
+    
 }
 
 #CarouselImage{
@@ -20,7 +37,8 @@ $highlightColor: #00B7EF;
 
 #text1div.text1div{
     padding-top: 20px;
-    width: 30%;
+    width: 30vw;
+    min-width: 400px;
     margin-left: 2%;
     // background-color: orange;
     // text-align: center;
@@ -31,17 +49,19 @@ $highlightColor: #00B7EF;
 }
 
 .titel{
-    height: 50px;
+    height: 60px;
+    margin-bottom: 0;
     font-family: 'Quicksand', sans-serif;
     font-weight: bolder;
     font-size: 60px;
-    // display: flex;
-    // align-items: center;
+    display: flex;
+    align-items: center;
 }
 
 #titel2.titel{
     font-size: 40px;
     height: 40px;
+    min-width: 100px;
 }
 
 .highlighted{
@@ -58,6 +78,37 @@ $highlightColor: #00B7EF;
     max-width: 900px;
 }
 
+#HomeMainButtonDiv{
+    // background-color: orange;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 #HomeMainButton{
-    border-radius: 999;
+    background-color: #00B7EF;
+    width: 200px;
+    height: 50px;
+    margin-bottom: 0;
+
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+
+    border-radius: 999px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:hover{
+        background-color: $hoverColor;
+        -webkit-transition: background-color 200ms ease-in-out;
+        -ms-transition: background-color 200ms ease-in-out;
+        transition: background-color 200ms ease-in-out;
+        
+        text-decoration: none;
+    }
 }

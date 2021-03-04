@@ -7,7 +7,7 @@ import Carousel from 'react-bootstrap/Carousel'
 
 function Home(){
     return(
-    <div id='HomeParent' style={{marginBottom: 50}}>
+    <div id='HomeParent'>
 
         <div
             id="text1div"
@@ -41,12 +41,14 @@ function Home(){
                 to="/Projects"
                 className="noUnderline blueOnHover"
             >
-                <p>
-                    Jetzt mehr erfahren!
-                </p>
+                <div id='HomeMainButtonDiv'>
+                    <p id='HomeMainButton'>
+                        Jetzt mehr erfahren!
+                    </p>
+                </div>
             </Link>
         </div>
-
+        
         <div id='CarouselParent'>
             <Carousel style={{marginTop: 20}}>
                 <Carousel.Item>
