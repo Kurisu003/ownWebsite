@@ -4,7 +4,6 @@ import '../../style/Header/MobilHeader.css'
 import '../../style/Header/PcHeader.css'
 import '../../style/Header/Header.css'
 import TopRoundPart from '../Assets/TopRoundPart'
-import {isMobile} from 'react-device-detect';
 
 import { Link } from "react-router-dom"
 
@@ -19,7 +18,6 @@ function HeaderCopy(){
 
     const [isMenuOpen, setIsMenuOpen] = React.useState(false);
     const Menu = isMenuOpen ? X : List;
-    const windowWidth = window.innerWidth
 
     async function menuClickHandler(){
         document.getElementById("Menu").style.animation = `spin ${0.1}s linear infinite`;
@@ -27,28 +25,39 @@ function HeaderCopy(){
         setIsMenuOpen(!isMenuOpen);
     }
 
-    function clickHandler(attr, platform){
+    function clickHandler(attr){
 
-        let primColor = 'black';
-        let secColor  = '#023A51';
+        let primColor = 'white';
+        let secColor  = '#1B8BC9';
 
-        if(platform === 'pc'){
-            primColor = '#023A51';
-            secColor = '#00B7EF';
-        }
+        // if(attr.endsWith('Pc')){
+            // primColor = '#023A51';
+            // secColor = '#00B7EF';
+        // }
+        // else{
+            setIsMenuOpen(false)
+        // }
         // resets all buttons and only changes the color of the neccesary one
-        document.getElementById('home').style.color = primColor;
-        document.getElementById('projects').style.color = primColor;
-        document.getElementById('contact').style.color = primColor;
-        document.getElementById('qualifications').style.color = primColor;
-        document.getElementById('linktree').style.color = primColor;
+        document.getElementById('homePc').style.color = primColor;
+        document.getElementById('projectsPc').style.color = primColor;
+        document.getElementById('contactPc').style.color = primColor;
+        document.getElementById('qualificationsPc').style.color = primColor;
+
+        document.getElementById('homeMobile').style.color = primColor;
+        document.getElementById('projectsMobile').style.color = primColor;
+        document.getElementById('contactMobile').style.color = primColor;
+        document.getElementById('qualificationsMobile').style.color = primColor;
 
         switch(attr){
-            case 'home' : document.getElementById('home').style.color = secColor; break;
-            case 'projects' : document.getElementById('projects').style.color = secColor; break;
-            case 'contact' : document.getElementById('contact').style.color = secColor; break;
-            case 'qualifications' : document.getElementById('qualifications').style.color = secColor; break;
-            case 'linktree' : document.getElementById('linktree').style.color = secColor; break;
+            case 'homePc' : document.getElementById(attr).style.color = secColor; break;
+            case 'projectsPc' : document.getElementById(attr).style.color = secColor; break;
+            case 'contactPc' : document.getElementById(attr).style.color = secColor; break;
+            case 'qualificationsPc' : document.getElementById(attr).style.color = secColor; break;
+            
+            case 'homeMobile' : document.getElementById(attr).style.color = secColor; break;
+            case 'projectsMobile' : document.getElementById(attr).style.color = secColor; break;
+            case 'contactMobile' : document.getElementById(attr).style.color = secColor; break;
+            case 'qualificationsMobile' : document.getElementById(attr).style.color = secColor; break;
         }
     }
 
@@ -79,8 +88,8 @@ function HeaderCopy(){
 
                                 <p
                                     className="navButton blueOnHover"
-                                    id="home"
-                                    onClick={ () => clickHandler('home', 'pc')}>
+                                    id="homePc"
+                                    onClick={ () => clickHandler('homePc')}>
                                     Home
                                 </p>
 
@@ -96,8 +105,8 @@ function HeaderCopy(){
 
                                 <p
                                     className="navButton blueOnHover"
-                                    id="projects"
-                                    onClick={ () => clickHandler('projects', 'pc')}>
+                                    id="projectsPc"
+                                    onClick={ () => clickHandler('projectsPc')}>
                                     Projekte
                                 </p>
 
@@ -114,8 +123,8 @@ function HeaderCopy(){
 
                                 <p
                                     className="navButton blueOnHover"
-                                    id="qualifications"
-                                    onClick={ () => clickHandler('qualifications', 'pc')}>
+                                    id="qualificationsPc"
+                                    onClick={ () => clickHandler('qualificationsPc')}>
                                     Qualifikationen
                                 </p>
 
@@ -132,8 +141,8 @@ function HeaderCopy(){
 
                                 <p
                                     className="navButton blueOnHover"
-                                    id="contact"
-                                    onClick={ () => clickHandler('contact', 'pc')}>
+                                    id="contactPc"
+                                    onClick={ () => clickHandler('contactPc')}>
                                     Kontakt
                                 </p>
 
@@ -141,23 +150,8 @@ function HeaderCopy(){
                         </div>
                     </div>
 
-                    <div
-                        className="linkTree">
+                    <div></div>
 
-                        <Link
-                            to="/Linktree"
-                            className="noUnderline blueOnHover"
-                        >
-
-                            <p
-                                className="navButton blueOnHover"
-                                id="linktree"
-                                onClick={ () => clickHandler('linktree', 'pc')}>
-                                Linktree
-                            </p>
-
-                        </Link>
-                    </div>
                     </div>
                     <TopRoundPart></TopRoundPart>
                 </div>
@@ -207,14 +201,14 @@ function HeaderCopy(){
                             <Link
                                 to="/Home"
                                 className="noUnderline blueOnHover"
+                                onClick={ () => clickHandler('homeMobile')}
                             >
                                 <div
                                     className={isMenuOpen ? "MenuPoint" : "none"}>
 
                                     <p
                                         className="MenuPointText"
-                                        id="home"
-                                        onClick={ () => clickHandler('home')}
+                                        id="homeMobile"
                                     >
                                         Home
                                     </p>
@@ -224,14 +218,14 @@ function HeaderCopy(){
                             <Link
                                 to="/Projects"
                                 className="noUnderline blueOnHover"
+                                onClick={ () => clickHandler('projectsMobile')}
                             >
                                 <div
                                     className={isMenuOpen ? "MenuPoint" : "none"}>
 
                                     <p
                                         className="MenuPointText"
-                                        id="projects"
-                                        onClick={ () => clickHandler('projects')}>
+                                        id="projectsMobile">
                                         Projects
                                     </p>
                                 </div>
@@ -240,6 +234,7 @@ function HeaderCopy(){
                             <Link
                                 to="/Qualifications"
                                 className="noUnderline blueOnHover"
+                                onClick={ () => clickHandler('qualificationsMobile')}
                             >
 
                                 <div
@@ -247,8 +242,7 @@ function HeaderCopy(){
 
                                     <p
                                         className="MenuPointText"
-                                        id="qualifications"
-                                        onClick={ () => clickHandler('qualifications')}>
+                                        id="qualificationsMobile">
                                         Qualifications
                                     </p>
                                 </div>
@@ -257,32 +251,15 @@ function HeaderCopy(){
                             <Link
                                 to="/Contact"
                                 className="noUnderline blueOnHover"
+                                onClick={ () => clickHandler('contactMobile')}
                             >
                                 <div
                                     className={isMenuOpen ? "MenuPoint" : "none"}>
 
                                     <p
                                         className="MenuPointText"
-                                        id="contact"
-                                        onClick={ () => clickHandler('contact')}>
+                                        id="contactMobile">
                                         Contact
-                                    </p>
-                                </div>
-                            </Link>
-
-                            <Link
-                                to="/Linktree"
-                                className="noUnderline blueOnHover"
-                            >
-                                <div
-                                    className={isMenuOpen ? "MenuPoint" : "none"}>
-
-                                    <p
-                                        className="MenuPointText"
-                                        id="linktree"
-                                        onClick={ () => clickHandler('linktree')}
-                                    >
-                                        Linktree
                                     </p>
                                 </div>
                             </Link>
@@ -296,255 +273,11 @@ function HeaderCopy(){
                                 onClick={ () => menuClickHandler()}
                             />
                         </div>
-                        <div id='overlayMenu'>
-
-                        </div>
-
                     </div>
                 </div>
             </div>
         </div>
     )
-        /*return(
-            <div style={{marginBottom: 100}}>
-                <div
-                    id="leftCircle"
-                    className="leftCircle"
-                >
-                    &nbsp;
-                </div>
-                <div
-                    id="middleStrip"
-                    className="middleStrip"
-                >
-                    &nbsp;
-                </div>
-                <div
-                    id="rightStrip"
-                    className="rightStrip"
-                >
-                    &nbsp;
-                </div>
-                <div
-                    id="rightCircle"
-                    className="rightCircle"
-                >
-                    &nbsp;
-                </div>
-
-                <div
-                    className="homeParent">
-
-                    <img
-                        className="newLogo"
-                        src="https://cdn.discordapp.com/attachments/806161925163581531/815674562330755153/HuskyLogo.png"></img>
-
-                    {/!* Displays Menu in the middle aka. actual Menu part*!/}
-                    <div
-                        id="nav"
-                        className={isMenuOpen ? "open" : ""}>
-
-                        <Link
-                            to="/Home"
-                            className="noUnderline blueOnHover"
-                        >
-                            <div
-                                className={isMenuOpen ? "MenuPoint" : "none"}>
-
-                                <p
-                                    className="MenuPointText"
-                                    id="home"
-                                    onClick={ () => clickHandler('home')}
-                                >
-                                    Home
-                                </p>
-                            </div>
-                        </Link>
-
-                        <Link
-                            to="/Projects"
-                            className="noUnderline blueOnHover"
-                        >
-                            <div
-                                className={isMenuOpen ? "MenuPoint" : "none"}>
-
-                                <p
-                                    className="MenuPointText"
-                                    id="projects"
-                                    onClick={ () => clickHandler('projects')}>
-                                    Projects
-                                </p>
-                            </div>
-                        </Link>
-
-                        <Link
-                            to="/Qualifications"
-                            className="noUnderline blueOnHover"
-                        >
-
-                            <div
-                                className={isMenuOpen ? "MenuPoint" : "none"}>
-
-                                <p
-                                    className="MenuPointText"
-                                    id="qualifications"
-                                    onClick={ () => clickHandler('qualifications')}>
-                                    Qualifications
-                                </p>
-                            </div>
-                        </Link>
-
-                        <Link
-                            to="/Contact"
-                            className="noUnderline blueOnHover"
-                        >
-                            <div
-                                className={isMenuOpen ? "MenuPoint" : "none"}>
-
-                                <p
-                                    className="MenuPointText"
-                                    id="contact"
-                                    onClick={ () => clickHandler('contact')}>
-                                    Contact
-                                </p>
-                            </div>
-                        </Link>
-
-                        <Link
-                            to="/Linktree"
-                            className="noUnderline blueOnHover"
-                        >
-                            <div
-                                className={isMenuOpen ? "MenuPoint" : "none"}>
-
-                                <p
-                                    className="MenuPointText"
-                                    id="linktree"
-                                    onClick={ () => clickHandler('linktree')}
-                                >
-                                    Linktree
-                                </p>
-                            </div>
-                        </Link>
-                    </div>
-
-                    <Menu
-                        id="Menu"
-                        color="black"
-                        size={80}
-                        onClick={ () => menuClickHandler()}
-                    />
-
-                </div>
-            </div>
-        )
-    }
-    return(
-        <div>
-        <div
-            className="header">
-        <div>
-           <img className="logo" alt=""
-                src="https://cdn.discordapp.com/attachments/806161925163581531/815674562330755153/HuskyLogo.png"></img>
-        </div>
-
-
-        <div
-            className="navigationParentDiv">
-
-            <div
-                className="navigationDiv">
-
-                <Link
-                    to="/Home"
-                    className="noUnderline blueOnHover"
-                >
-
-                    <p
-                        className="navButton blueOnHover"
-                        id="home"
-                        onClick={ () => clickHandler('home', 'pc')}>
-                        Home
-                    </p>
-
-                </Link>
-            </div>
-
-            <div
-                className="navigationDiv">
-                <Link
-                    to="/Projects"
-                    className="noUnderline blueOnHover"
-                >
-
-                    <p
-                        className="navButton blueOnHover"
-                        id="projects"
-                        onClick={ () => clickHandler('projects', 'pc')}>
-                        Projekte
-                    </p>
-
-                </Link>
-            </div>
-
-            <div
-                className="navigationDiv">
-
-                <Link
-                    to="/Qualifications"
-                    className="noUnderline blueOnHover"
-                >
-
-                    <p
-                        className="navButton blueOnHover"
-                        id="qualifications"
-                        onClick={ () => clickHandler('qualifications', 'pc')}>
-                        Qualifikationen
-                    </p>
-
-                </Link>
-            </div>
-
-            <div
-                className="navigationDiv">
-
-                <Link
-                    to="/Contact"
-                    className="noUnderline blueOnHover"
-                >
-
-                    <p
-                        className="navButton blueOnHover"
-                        id="contact"
-                        onClick={ () => clickHandler('contact', 'pc')}>
-                        Kontakt
-                    </p>
-
-                </Link>
-            </div>
-        </div>
-
-        <div
-            className="linkTree">
-
-            <Link
-                to="/Linktree"
-                className="noUnderline blueOnHover"
-            >
-
-                <p
-                    className="navButton blueOnHover"
-                    id="linktree"
-                    onClick={ () => clickHandler('linktree', 'pc')}>
-                    Linktree
-                </p>
-
-            </Link>
-        </div>
-        </div>
-        <TopRoundPart></TopRoundPart>
-    </div>
-    )*/
 }
 
 export default HeaderCopy
