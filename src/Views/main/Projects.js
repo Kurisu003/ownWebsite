@@ -15,24 +15,29 @@ function Projects(){
     return(
         <div className="parent">
             <DividerTopColor1 />
-            <div className="ProjectTitle">
-                Programmier Projekte
-            </div>
-            <div style={{backgroundColor: '#97ddcd'}}>
-                <Panel1 />
-                
-                <Panel2 />
-                
-                <Panel3 />
 
-                <Panel4 />
-               
-            </div>
+                <div className="ProjectTitle" id='ProgrammingProjects'>
+                    Programmier-Projekte
+                </div>
+                <div style={{backgroundColor: '#97ddcd'}}>
+                    <Panel1 />
+                    
+                    <Panel2 />
+                    
+                    <Panel3 />
+
+                    <Panel4 />
+                
+                </div>
 
             <DividerBottomColor1/>
             
+
             <DividerTopColor2 />
 
+                <div className="ProjectTitle" id="DesignProjects">
+                    Design-Projekte
+                </div>
             
             <DividerBottomColor2/>
             {/* <RightPanel1></RightPanel1> */}

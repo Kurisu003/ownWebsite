@@ -30,13 +30,7 @@ function HeaderCopy(){
         let primColor = 'white';
         let secColor  = '#1B8BC9';
 
-        // if(attr.endsWith('Pc')){
-            // primColor = '#023A51';
-            // secColor = '#00B7EF';
-        // }
-        // else{
-            setIsMenuOpen(false)
-        // }
+        setIsMenuOpen(false)
         // resets all buttons and only changes the color of the neccesary one
         document.getElementById('homePc').style.color = primColor;
         document.getElementById('projectsPc').style.color = primColor;

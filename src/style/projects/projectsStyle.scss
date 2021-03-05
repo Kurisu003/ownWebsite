@@ -12,11 +12,18 @@ $highlightColor: #00B7EF;
 }
 
 .ProjectTitle{
-	background-color: #97ddcd;
     font-family: 'Quicksand', sans-serif;
     font-weight: bold;
     font-size: 50px;
 	color: $highlightColor;
 	padding-top: 20px;
 	padding-left: 10%;
+}
+
+#ProgrammingProjects{
+	background-color: #97ddcd;
+}
+
+#DesignProjects{
+	background-color: #AAD688;
 }

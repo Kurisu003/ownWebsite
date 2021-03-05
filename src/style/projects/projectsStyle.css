@@ -6,12 +6,19 @@
 }
 
 .ProjectTitle {
-  background-color: #97ddcd;
   font-family: 'Quicksand', sans-serif;
   font-weight: bold;
   font-size: 50px;
   color: #00B7EF;
   padding-top: 20px;
   padding-left: 10%;
+}
+
+#ProgrammingProjects {
+  background-color: #97ddcd;
+}
+
+#DesignProjects {
+  background-color: #AAD688;
 }
 /*# sourceMappingURL=projectsStyle.css.map */
