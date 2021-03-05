@@ -1,5 +1,5 @@
 import React from 'react'
-import '../../style/panel/Panel.css'
+import '../../../style/panel/Panel.css'
 import {isMobile} from 'react-device-detect';
 
 function Panel3(){

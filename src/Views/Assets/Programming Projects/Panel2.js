@@ -1,15 +1,24 @@
 import React from 'react'
-import '../../style/panel/Panel.css'
+import '../../../style/panel/Panel.css'
 import {isMobile} from 'react-device-detect';
 
-function Panel2R(){
+function Panel2(){
 
     const maxHeight = isMobile ? 400 : 500;
     const maxWidth = isMobile ? 240 : 300;
     const textTopMargin = isMobile ? 20 : 0;
+
     return(
         <div style={{paddingTop: 50, paddingBottom: 50}}>
             <div className="panelParent" style={{marginTop: 10}}>
+                
+                <img
+                    id="Panel2ImgMobile"
+                    className="img"
+                    style={{maxHeight: maxHeight + "px", maxWidth: maxWidth + 'px'}}
+                    src="https://cdn.discordapp.com/attachments/814271639122477107/815514477528612914/TagesKarteVorlage.png"
+                >
+                </img>
 
                 <div id="textDiv" className="textDiv">
                     <p 
@@ -31,9 +40,9 @@ function Panel2R(){
                         </a>
                     </div>
                 </div>
-                 
+
                 <img
-                    id="img"
+                    id="Panel2ImgPc"
                     className="img"
                     style={{maxHeight: maxHeight + "px", maxWidth: maxWidth + 'px'}}
                     src="https://cdn.discordapp.com/attachments/814271639122477107/815514477528612914/TagesKarteVorlage.png"
@@ -44,4 +53,4 @@ function Panel2R(){
     )
 }
 
-export default Panel2R
+export default Panel2

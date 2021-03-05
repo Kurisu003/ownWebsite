@@ -94,4 +94,38 @@
   text-decoration: none;
   color: white;
 }
+
+#Panel2ImgMobile {
+  display: none;
+}
+
+#Panel2ImgPc {
+  display: block;
+}
+
+@media only screen and (max-width: 984px) {
+  #Panel2ImgMobile {
+    display: block;
+  }
+  #Panel2ImgPc {
+    display: none;
+  }
+}
+
+#Panel4ImgMobile {
+  display: none;
+}
+
+#Panel4ImgPc {
+  display: block;
+}
+
+@media only screen and (max-width: 1284px) {
+  #Panel4ImgMobile {
+    display: block;
+  }
+  #Panel4ImgPc {
+    display: none;
+  }
+}
 /*# sourceMappingURL=Panel.css.map */

@@ -1,20 +1,25 @@
 import React from 'react'
-import '../../style/panel/Panel.css'
+import '../../../style/panel/Panel.css'
 import {isMobile} from 'react-device-detect';
 
-function Panel4R(){
+function Panel4L(){
 
-    const topMargin = isMobile ? 120 : 10;
     const maxHeight = isMobile ? 300 : 500;
     const maxWidth = isMobile ? 400 : 600;
     const textTopMargin = isMobile ? 20 : 0;
-    const windowWidth = window.innerWidth 
 
-    console.log(windowWidth)
-
+    
     return(
         <div style={{paddingTop: 50, paddingBottom: 50}}>
             <div className="panelParent" style={{marginTop: 10}}>
+                
+                <img
+                    id="Panel4ImgMobile"
+                    className="img"
+                    style={{maxHeight: maxHeight + "px", maxWidth: maxWidth + 'px'}}
+                    src="https://cdn.discordapp.com/attachments/814271639122477107/815518869367685130/florian-olivo-4hbJ-eymZ1o-unsplash.jpg"
+                >
+                </img>
 
                 <div id="textDiv" className="textDiv">
                     <p 
@@ -38,7 +43,7 @@ function Panel4R(){
                 </div>
 
                 <img
-                    id="img"
+                    id="Panel4ImgPc"
                     className="img"
                     style={{maxHeight: maxHeight + "px", maxWidth: maxWidth + 'px'}}
                     src="https://cdn.discordapp.com/attachments/814271639122477107/815518869367685130/florian-olivo-4hbJ-eymZ1o-unsplash.jpg"
@@ -49,4 +54,4 @@ function Panel4R(){
     )
 }
 
-export default Panel4R
+export default Panel4L

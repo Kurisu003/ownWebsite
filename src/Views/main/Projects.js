@@ -1,42 +1,40 @@
 import React from 'react'
 import '../../style/projects/projectsStyle.css'
 
-import Panel1L from '../Assets/Panel1L'
-import Panel2R from '../Assets/Panel2R'
-import Panel2L from '../Assets/Panel2L'
-import Panel3L from '../Assets/Panel3L'
-import Panel4R from '../Assets/Panel4R'
-import Panel4L from '../Assets/Panel4L'
+import Panel1 from '../Assets/Programming Projects/Panel1'
+import Panel2 from '../Assets/Programming Projects/Panel2'
+import Panel3 from '../Assets/Programming Projects/Panel3'
+import Panel4 from '../Assets/Programming Projects/Panel4'
 
 import DividerBottomColor1 from '../Assets/DividerBottomColor1'
 import DividerTopColor1 from '../Assets/DividerTopColor1'
+import DividerBottomColor2 from '../Assets/DividerBottomColor2'
+import DividerTopColor2 from '../Assets/DividerTopColor2'
 
 function Projects(){
     return(
         <div className="parent">
             <DividerTopColor1 />
+            <div className="ProjectTitle">
+                Programmier Projekte
+            </div>
             <div style={{backgroundColor: '#97ddcd'}}>
-                <Panel1L></Panel1L>
+                <Panel1 />
                 
-                <div id='panel2Pc' className='panel'>
-                    <Panel2R></Panel2R>
-                </div>
+                <Panel2 />
                 
-                <div id='panel2Mobile' className='panel'>
-                    <Panel2L></Panel2L>                
-                </div>
-                <Panel3L></Panel3L>
+                <Panel3 />
 
-                <div id='panel4Pc' className='panel'>
-                    <Panel4R></Panel4R>
-                </div>
-                
-                <div id='panel4Mobile' className='panel'>
-                    <Panel4L></Panel4L>                
-                </div>
+                <Panel4 />
+               
             </div>
 
             <DividerBottomColor1/>
+            
+            <DividerTopColor2 />
+
+            
+            <DividerBottomColor2/>
             {/* <RightPanel1></RightPanel1> */}
 
             {/* <div className="imgDiv">
