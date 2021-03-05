@@ -13,7 +13,7 @@
 }
 
 #CarouselParent {
-  width: 60vw;
+  width: 60%;
   min-width: 400px;
   padding-left: 20px;
   padding-right: 20px;
@@ -112,5 +112,41 @@
   -webkit-transition: background-color 200ms ease-in-out;
   transition: background-color 200ms ease-in-out;
   text-decoration: none;
+}
+
+@media only screen and (max-width: 1055px) {
+  #text1div.text1div {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .titel {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .firstTextChild {
+    width: 90%;
+    max-width: 600px;
+    word-wrap: wrap;
+  }
+  #HomeParent {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #CarouselParent {
+    width: 900px;
+  }
 }
 /*# sourceMappingURL=homeStyle.css.map */
