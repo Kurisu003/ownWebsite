@@ -5,6 +5,7 @@ import {isMobile} from 'react-device-detect';
 
 import { Envelope } from 'react-bootstrap-icons';
 import { Telephone } from 'react-bootstrap-icons';
+import { Instagram } from 'react-bootstrap-icons';
 
 function Contact(){
     return(
@@ -51,7 +52,7 @@ function Contact(){
                         id="text"
                         className="text"
                     >
-                        Melde dich jederzeit bei mir.
+                        Melde dich jederzeit bei mir. Jetzt auch auf Whatsapp
                     </p>
 
                 </div>
@@ -60,14 +61,14 @@ function Contact(){
                     id="textDiv"
                 >
                     
-                    <div 
-                        id="contactEmail"
+                    <a 
+                        id="contactButton"
                         className="contactButton text"
+                        href="mailto:dani003@outlook.com"
                     >
                         
                         <Envelope 
-                            id="Menu" 
-                            color="white" 
+                            id="Icon" 
                             size={30}
                         />
 
@@ -77,16 +78,16 @@ function Contact(){
                             E-Mail
                         </a>
                     
-                    </div>
+                    </a>
 
-                    <div 
-                        id="contactEmail"
+                    <a 
+                        id="contactButton"
                         className="contactButton text"
+                        href="tel:00393345856711"
                     >
 
                         <Telephone 
-                            id="Menu"
-                            color="white"
+                            id="Icon"
                             size={30}
                         />
 
@@ -96,7 +97,26 @@ function Contact(){
                             Phone
                         </a>
                         
-                    </div>
+                    </a>
+
+                    <a 
+                        id="contactButton"
+                        className="contactButton text"
+                        href="https://www.instagram.com/fusteam/"
+                    >
+
+                        <Instagram 
+                            id="Icon"
+                            size={30}
+                        />
+
+                        <a 
+                            style={{paddingLeft: 5}}
+                        >
+                            Instagram
+                        </a>
+                        
+                    </a>
                 </div>
             </div>
         </div>

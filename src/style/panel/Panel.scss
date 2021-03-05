@@ -6,7 +6,6 @@ $highlightColor: #00B7EF;
 $hoverColor: #023A51;
 
 .panelParent{
-    // background-color: red;
     width: 100%;
     position: relative;
 
@@ -52,18 +51,18 @@ $hoverColor: #023A51;
     color: black
 }
 
+//Controls actual Button pill
+//Responsible for fade, background color, etc.
 .linkDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     width: 200px;   
     height: 50px;
     margin-left: 30px;
     margin-top: 20px;
     border-radius: 999px;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    text-decoration: none;
 
     background-color: $highlightColor;
     &:hover{
@@ -74,6 +73,8 @@ $hoverColor: #023A51;
     }
 }
 
+//Text in button pill
+//turns off text decoration, etc.
 .link{
     color: white;
     text-decoration: none;
@@ -81,7 +82,10 @@ $hoverColor: #023A51;
     font-weight: bold;
     font-family: 'Quicksand', sans-serif;
 
-    &:hover{text-decoration: none; color: white}
+    &:hover{
+        text-decoration: none;
+        color: white
+    }
 }
 
 #Panel2ImgMobile{

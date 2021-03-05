@@ -63,7 +63,13 @@ $highlightColor: #00B7EF;
 #text{
     font-size: 20px;
     font-weight: bold;
-    width: 250px;
+    width: 350px;
+}
+
+@media only screen and (max-width: 580px) {
+	#text{
+		width: 250px;
+	}
 }
 
 .contactButton{
@@ -80,4 +86,34 @@ $highlightColor: #00B7EF;
 
     margin-top: 20px;
     border-radius: 999px;
+}
+
+#contactButton{
+    &:hover{
+        background-color: $textColor;
+        -webkit-transition: background-color 200ms ease-in-out;
+        -ms-transition: background-color 200ms ease-in-out;
+        transition: background-color 200ms ease-in-out;
+
+        border: 2px solid $highlightColor;
+
+        -webkit-transition: border-color 200ms ease-in-out;
+        -ms-transition: border-color 200ms ease-in-out;
+        transition: border-color 200ms ease-in-out;
+        
+        text-decoration: none;
+        #Icon{
+            color: $highlightColor;
+            -webkit-transition: color 200ms ease-in-out;
+            -ms-transition: color 200ms ease-in-out;
+            transition: color 200ms ease-in-out;
+        }
+        a{            
+            color: $highlightColor;
+            -webkit-transition: color 200ms ease-in-out;
+            -ms-transition: color 200ms ease-in-out;
+            transition: color 200ms ease-in-out;
+        }
+    }
+    
 }

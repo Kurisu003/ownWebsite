@@ -75,7 +75,13 @@
 #text {
   font-size: 20px;
   font-weight: bold;
-  width: 250px;
+  width: 350px;
+}
+
+@media only screen and (max-width: 580px) {
+  #text {
+    width: 250px;
+  }
 }
 
 .contactButton {
@@ -95,5 +101,27 @@
           justify-content: center;
   margin-top: 20px;
   border-radius: 999px;
+}
+
+#contactButton:hover {
+  background-color: #023A51;
+  -webkit-transition: background-color 200ms ease-in-out;
+  transition: background-color 200ms ease-in-out;
+  border: 2px solid #00B7EF;
+  -webkit-transition: border-color 200ms ease-in-out;
+  transition: border-color 200ms ease-in-out;
+  text-decoration: none;
+}
+
+#contactButton:hover #Icon {
+  color: #00B7EF;
+  -webkit-transition: color 200ms ease-in-out;
+  transition: color 200ms ease-in-out;
+}
+
+#contactButton:hover a {
+  color: #00B7EF;
+  -webkit-transition: color 200ms ease-in-out;
+  transition: color 200ms ease-in-out;
 }
 /*# sourceMappingURL=contactStyle.css.map */
