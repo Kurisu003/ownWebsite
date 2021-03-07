@@ -15,6 +15,7 @@ import Contact from './Views/main/Contact'
 import LinkTree from './Views/main/Linktree'
 
 function App() {
+
   return (
 	<div className="App h-100" style={{backgroundColor: 'white'}}>
 		<Router>

@@ -10,21 +10,25 @@ import { Link } from "react-router-dom"
 import { List } from 'react-bootstrap-icons';
 import { X } from 'react-bootstrap-icons';
 
+//function to sleep passed amount of ms
 function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
 }
 
-function HeaderCopy(){
+function Header(){
 
     const [isMenuOpen, setIsMenuOpen] = React.useState(false);
     const Menu = isMenuOpen ? X : List;
 
+    //used for spinning animation on mobile
     async function menuClickHandler(){
         document.getElementById("Menu").style.animation = `spin ${0.1}s linear infinite`;
         await sleep(100);
         setIsMenuOpen(!isMenuOpen);
     }
 
+    //Used to change color of header elements when navigated
+    //to with buttons
     function clickHandler(attr){
 
         let primColor = 'white';
@@ -55,6 +59,29 @@ function HeaderCopy(){
         }
     }
 
+    //Used to color elements in header even if page is loaded directly
+    document.addEventListener('readystatechange', event => { 
+        // When window loaded ( external resources are loaded too- `css`,`src`, etc...) 
+        if (event.target.readyState === "complete") {
+            if(window.location.pathname.endsWith('Home')){
+                document.getElementById('homePc').style.color = '#1B8BC9';
+                document.getElementById('homeMobile').style.color = '#1B8BC9';
+            }
+            else if(window.location.pathname.endsWith('Projects')){
+                document.getElementById('projectsPc').style.color = '#1B8BC9';
+                document.getElementById('projectsMobile').style.color = '#1B8BC9';
+            }
+            else if(window.location.pathname.endsWith('Qualifications')){
+                document.getElementById('qualificationsPc').style.color = '#1B8BC9';
+                document.getElementById('qualificationsMobile').style.color = '#1B8BC9';
+            }
+            else if(window.location.pathname.endsWith('Contact')){
+                document.getElementById('contactPc').style.color = '#1B8BC9';
+                document.getElementById('contactMobile').style.color = '#1B8BC9';
+            }
+        }
+    });
+    
 
     return(
         <div id='headerWrapper'>
@@ -274,4 +301,4 @@ function HeaderCopy(){
     )
 }
 
-export default HeaderCopy
+export default Header
