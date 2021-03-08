@@ -1,12 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap");
 .QualificationsButton {
-  background-color: orange;
+  background-color: #A4CDE2;
   margin-left: 50px;
   margin-right: 50px;
   border-radius: 10px;
   min-width: 100px;
   max-width: 200px;
-  height: 40px;
+  height: 70px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -19,21 +19,79 @@
 .QualificationButtonTitle {
   font-family: 'Quicksand', sans-serif;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 30px;
   margin-left: 20px;
   margin-bottom: 0px;
 }
 
 .QualificationsContent {
-  background-color: #00B7EF;
+  background-color: #023A51;
   height: 0px;
   width: 0px;
   margin-left: 50px;
+  margin-right: 50px;
   border-radius: 0px;
+  max-width: 0px;
+  display: block;
+}
+
+.QualificationsContentElement {
+  display: none;
+  width: 100%;
+  height: 50px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .QualificationsContentText {
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 0;
+  height: 100%;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.QualificationsContentButton {
   display: none;
   margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 0;
+  height: 80%;
+  width: 100px;
+  color: white;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 999px;
+  background-color: #00B7EF;
+}
+
+.QualificationsContentButton:hover {
+  background-color: #023A51;
+  -webkit-transition: background-color 200ms ease-in-out;
+  transition: background-color 200ms ease-in-out;
+  border: 2px solid #00B7EF;
+  -webkit-transition: border-color 200ms ease-in-out;
+  transition: border-color 200ms ease-in-out;
+  text-decoration: none;
+  color: #00B7EF;
+  -webkit-transition: color 200ms ease-in-out;
+  transition: color 200ms ease-in-out;
 }
 /*# sourceMappingURL=qualificationsStyle.css.map */
