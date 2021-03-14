@@ -5,71 +5,16 @@ $textColor: #023A51;
 $highlightColor: #00B7EF;
 
 
-.QualificationsButton{
-    background-color: $header;
-    
-    margin-left: 50px;
-    margin-right: 50px;
 
-    border-radius: 10px;
 
-    min-width: 100px;
-    max-width: 200px;
-    height: 70px;
 
-    display: flex;
-    align-items: center;
 
-    // text-align: center;
 
-    cursor: pointer;
-}
 
-.QualificationButtonTitle{
-    font-family: 'Quicksand', sans-serif;
-    font-weight: bold;
-    font-size: 30px;
-    margin-left: 20px;
-    margin-bottom: 0px;
-}
 
-.QualificationsContent{
-    // display: none;
-    background-color: $textColor;
-    height: 0px;
-    width: 0px;
-    margin-left: 50px;
-    margin-right: 50px;
 
-    border-radius: 0px;
 
-    // min-width: 100px;
-    max-width: 0px;
-    display: block;
-}
-
-.QualificationsContentElement{
-    display: none;
-    width: 100%;
-    height: 50px;
-    display: inline-flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.QualificationsContentText{
-    // display: none;
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-bottom: 0;
-    height: 100%;
-    color: white;
-    display: flex;
-    align-items: center;
-    // background-color: darkred;
-}
-
-.QualificationsContentButton{
+.QCB{
     display: none;
     margin-left: 20px;
     margin-right: 20px;
@@ -102,4 +47,171 @@ $highlightColor: #00B7EF;
         -ms-transition: color 200ms ease-in-out;
         transition: color 200ms ease-in-out;
     }
+}
+
+
+
+
+.QualificationsButton{
+    background-color: $header;
+    
+    margin-left: 50px;
+    margin-right: 50px;
+
+    border-radius: 10px;
+
+    min-width: 100px;
+    max-width: 200px;
+    height: 70px;
+
+    display: flex;
+    align-items: center;
+
+    cursor: pointer;
+}
+
+
+
+// Github button
+// Qualification Content Button
+.QCB{
+    transition: opacity 300ms ease-in-out 0ms;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    visibility: hidden;
+    opacity: 0;
+    
+    width: 100px;
+    height: 80%;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 0;
+    border-radius: 999px;
+
+    background-color: $highlightColor;
+    color: white;
+
+    &:hover{
+        background-color: $textColor;
+        -webkit-transition: background-color 200ms ease-in-out;
+        -ms-transition: background-color 200ms ease-in-out;
+        transition: background-color 200ms ease-in-out;
+
+        border: 2px solid $highlightColor;
+
+        -webkit-transition: border-color 200ms ease-in-out;
+        -ms-transition: border-color 200ms ease-in-out;
+        transition: border-color 200ms ease-in-out;
+        
+        text-decoration: none;     
+
+        color: $highlightColor;
+        -webkit-transition: color 200ms ease-in-out;
+        -ms-transition: color 200ms ease-in-out;
+        transition: color 200ms ease-in-out;
+    }
+}
+
+.ExtendedQCB{
+    transition: opacity 300ms ease-in-out 300ms;
+    visibility: visible;
+    opacity: 1;
+}
+
+// Title
+// Qualifications Header Title
+.QHTitle{
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    margin-left: 20px;
+    margin-bottom: 0px;
+    user-select: none;
+}
+
+// Qualifications Conent Element
+.QCE{
+    width: 100%;
+    height: 50px;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    visibility: hidden;
+    opacity: 0;
+}
+
+.ExtendedQCE{
+    transition: all 300ms ease-in-out 300ms;
+    visibility: visible;
+    opacity: 1;
+}
+
+// Qualifications Header aka. "button"
+.QH{
+    background-color: $header;
+    
+    display: flex;
+    align-items: center;
+        
+    height: 70px;
+    min-width: 200px;
+    width: 260px;
+    margin-right: 50px;
+    margin-left: 50px;
+    margin-top: 50px;
+    border-radius: 10px;
+    
+    cursor: pointer;
+    transition: all 300ms ease-in-out 300ms;
+}
+
+.ExtendedQH{
+    transition: all 300ms ease-in-out 0ms;
+
+    border-bottom-left-radius: 0px;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 0px;
+    border-top-right-radius: 10px;***
+
+    width: 80%;
+}
+
+// Qualifications Content
+.QC{
+    transition: all 300ms ease-in-out 0ms;
+    background-color: $textColor;
+    height: 0px;
+    width: 80%;
+    margin-left: 50px;
+    margin-right: 50px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    display: inline-flex;
+    justify-content: space-between;
+}
+
+.ExtendedQC{
+    transition: all 300ms ease-in-out 300ms;
+    height: 185px;
+    // max-width: 80%;
+    padding-bottom: 20px;
+    padding-top: 15px;
+    display: block;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+// Qualifications Text
+.QCText{
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 0;
+    height: 100%;
+    color: white;
+    display: flex;
+    align-items: center;
+    user-select: none;
 }
