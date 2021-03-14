@@ -6,7 +6,7 @@ function QPanel(props) {
     const [isOpen, setIsOpen] = useState(false)
     let classNameSuffix = ''
     if(isOpen){
-        classNameSuffix = ' Extended' 
+        classNameSuffix = ' Extended'
     }
     else{
         classNameSuffix = ''
@@ -31,23 +31,22 @@ function QPanel(props) {
         >
         {props.buttonInfo.map(element => {
             return(
-                    <div
-                        className={'QCE' + (isOpen ? classNameSuffix + 'QCE' : '')}
+                <div
+                    className={'QCE' + (isOpen ? classNameSuffix + 'QCE' : '')}
+                >
+                    
+                    <p
+                        className='QCText'
                     >
-                        
-                        <p
-                            className='QCText'
-                        >
-                            {element[0]}
-                        </p>
-                        <a
-                            className={'QCB' + (isOpen ? classNameSuffix + 'QCB' : '')}
-                            href={element[1]}
-                        >
-                            Github
-                        </a>
-                    </div>
-                
+                        {element[0]}
+                    </p>
+                    <a
+                        className={'QCB' + (isOpen ? classNameSuffix + 'QCB' : '')}
+                        href={element[1]}
+                    >
+                        Github
+                    </a>
+                </div>
         )})}
         </div>
     </div>

@@ -2,11 +2,9 @@ import React from 'react'
 import '../../../style/panel/Panel.css'
 import {isMobile} from 'react-device-detect';
 
-function Panel3(){
+function PanelL(props){
 
-    const topMargin = isMobile ? 120 : 10;
-    const maxHeight = isMobile ? 300 : 500;
-    const textTopMargin = isMobile ? 20 : 0;
+    const maxHeight = isMobile ? props.obj.maxHeightMobile : props.obj.maxHeightPc;
 
     return(
         <div style={{paddingTop: 50, paddingBottom: 50}}>
@@ -16,27 +14,26 @@ function Panel3(){
                     id="img"
                     className="img"
                     style={{maxHeight: maxHeight + "px"}}
-                    src="https://cdn.discordapp.com/attachments/814271639122477107/815518284761530368/unknown.png"
+                    src={props.obj.imgSrc}
                 >
                 </img>
 
                 <div id="textDiv" className="textDiv">
                     <p 
                         className="title">
-                        Url Shortener
+                        {props.obj.title}
                     </p>
                     
                     <p
-                        id="projectText" className="text"  style={{marginTop: textTopMargin + 'px'}}>
-                        Url Shortener in <strong> Java </strong> mit <strong> Hashmaps </strong> und <strong>26<sup>4</sup>
-                        möglichen Urls</strong>
+                        id="projectText" className="text">
+                        {props.obj.text.map((element) => {return(element)})}
                     </p>
 
                     <div className="linkDiv">
                         <a 
-                            href="http://paketdienst.tk"
+                            href={props.obj.href}
                             className="link">
-                            Git-Hub
+                            Website
                         </a>
                     </div>
                 </div>
@@ -45,4 +42,4 @@ function Panel3(){
     )
 }
 
-export default Panel3
+export default PanelL

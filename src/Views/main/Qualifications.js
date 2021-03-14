@@ -1,6 +1,6 @@
 import React from 'react'
 import '../../style/qualifications/qualificationsStyle.css'
-import QPanelC from "../Assets/Qualifications/QPanel";
+import QPanel from "../Assets/Qualifications/QPanel";
 
 function Qualifications() {
 
@@ -86,7 +86,7 @@ function Qualifications() {
             
             {array.map(content => (
                 content.map(item =>(
-                    <QPanelC name={item.name} buttonInfo={item.buttonInfo} logoName={item.logoName}/>
+                    <QPanel name={item.name} buttonInfo={item.buttonInfo} logoName={item.logoName}/>
                 ))
             )) 
             }

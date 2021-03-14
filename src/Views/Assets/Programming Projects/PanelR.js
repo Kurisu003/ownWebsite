@@ -2,40 +2,39 @@ import React from 'react'
 import '../../../style/panel/Panel.css'
 import {isMobile} from 'react-device-detect';
 
-function Panel4L(){
+function PanelR(props){
 
-    const maxHeight = isMobile ? 300 : 500;
-    const maxWidth = isMobile ? 400 : 600;
+    const maxHeight = isMobile ? props.obj.maxHeightMobile : props.obj.maxHeightPc;
+    const maxWidth = isMobile ? props.obj.maxWidthMobile : props.obj.maxWidthPc;
     const textTopMargin = isMobile ? 20 : 0;
+    console.log(props.obj.maxWidthMobile)
 
-    
     return(
         <div style={{paddingTop: 50, paddingBottom: 50}}>
             <div className="panelParent" style={{marginTop: 10}}>
                 
                 <img
-                    id="Panel4ImgMobile"
+                    id={'Panel' + props.obj.idNum + 'ImgMobile'}
                     className="img"
                     style={{maxHeight: maxHeight + "px", maxWidth: maxWidth + 'px'}}
-                    src="https://cdn.discordapp.com/attachments/814271639122477107/815518869367685130/florian-olivo-4hbJ-eymZ1o-unsplash.jpg"
+                    src={props.obj.imgSrc}
                 >
                 </img>
 
                 <div id="textDiv" className="textDiv">
                     <p 
                         className="title">
-                        Hamming-Code
+                        Gutschein Generator
                     </p>
                     
                     <p
                         id="projectText" className="text"  style={{marginTop: textTopMargin + 'px'}}>
-                        Code zur Ausbesserung von Bitflips. Lange Version in <strong> Java </strong> und kurze
-                        Version in <strong> Javascript </strong>
+                        {props.obj.text.map((element) => {return(element)})}
                     </p>
 
                     <div className="linkDiv">
                         <a 
-                            href="http://paketdienst.tk"
+                            href={props.obj.href}
                             className="link">
                             Git-Hub
                         </a>
@@ -43,10 +42,10 @@ function Panel4L(){
                 </div>
 
                 <img
-                    id="Panel4ImgPc"
+                    id={'Panel' + props.obj.idNum + 'ImgPc'}
                     className="img"
                     style={{maxHeight: maxHeight + "px", maxWidth: maxWidth + 'px'}}
-                    src="https://cdn.discordapp.com/attachments/814271639122477107/815518869367685130/florian-olivo-4hbJ-eymZ1o-unsplash.jpg"
+                    src={props.obj.imgSrc}
                 >
                 </img>
             </div>
@@ -54,4 +53,4 @@ function Panel4L(){
     )
 }
 
-export default Panel4L
+export default PanelR
