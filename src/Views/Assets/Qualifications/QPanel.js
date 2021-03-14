@@ -1,7 +1,7 @@
 import React from "react";
 import { useState } from "react";
 
-function QPanelC(props) {
+function QPanel(props) {
     
     const [isOpen, setIsOpen] = useState(false)
     let classNameSuffix = ''
@@ -12,7 +12,6 @@ function QPanelC(props) {
         classNameSuffix = ''
     }
     let imgsrc = require("../Svgs/" + props.logoName);
-    // console.log(className)
 
     return (
     <div style={{minHeight: 110}}>
@@ -21,7 +20,7 @@ function QPanelC(props) {
             onClick={() => setIsOpen(!isOpen)}
         >
         
-        <img src={imgsrc.default} alt='logo' style={{width: 50, marginLeft: 20, userSelect: 'none'}}/>
+        <img src={imgsrc.default} alt='logo' style={{width: 50, marginLeft: 20, userSelect: 'none', borderRadius: '20px'}}/>
             <p className='QHTitle'>
                 {props.name}
             </p>
@@ -32,7 +31,6 @@ function QPanelC(props) {
         >
         {props.buttonInfo.map(element => {
             return(
-                <div>
                     <div
                         className={'QCE' + (isOpen ? classNameSuffix + 'QCE' : '')}
                     >
@@ -49,7 +47,6 @@ function QPanelC(props) {
                             Github
                         </a>
                     </div>
-                </div>
                 
         )})}
         </div>
@@ -58,4 +55,4 @@ function QPanelC(props) {
 }
 
 
-export default QPanelC
+export default QPanel
