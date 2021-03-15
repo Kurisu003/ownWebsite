@@ -82,7 +82,7 @@ function Qualifications() {
     let array = [j, c, js, asm, py, bat]
 
     return(
-        <div>
+        <div className='tabContainer'>
             
             {array.map(content => (
                 content.map(item =>(
@@ -91,7 +91,6 @@ function Qualifications() {
             )) 
             }
             <br/>
-            {/* <QTest2></QTest2> */}
         </div>
     )
 

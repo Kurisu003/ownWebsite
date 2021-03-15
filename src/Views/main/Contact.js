@@ -27,6 +27,7 @@ function Contact(){
                     <img 
                         id="personalImage" 
                         className="img"
+                        alt=""
                         style={{width: isMobile ? 150 : 200, height: isMobile ? 150 : 200}} 
                         src="https://cdn.discordapp.com/attachments/806161925163581531/815648116119306241/unknown.png"></img>
                     
@@ -72,7 +73,7 @@ function Contact(){
                             size={30}
                         />
 
-                        <a 
+                        <a
                             style={{paddingLeft: 5}}
                         >
                             E-Mail

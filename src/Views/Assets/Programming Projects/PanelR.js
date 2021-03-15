@@ -7,7 +7,6 @@ function PanelR(props){
     const maxHeight = isMobile ? props.obj.maxHeightMobile : props.obj.maxHeightPc;
     const maxWidth = isMobile ? props.obj.maxWidthMobile : props.obj.maxWidthPc;
     const textTopMargin = isMobile ? 20 : 0;
-    console.log(props.obj.maxWidthMobile)
 
     return(
         <div style={{paddingTop: 50, paddingBottom: 50}}>
@@ -15,6 +14,7 @@ function PanelR(props){
                 
                 <img
                     id={'Panel' + props.obj.idNum + 'ImgMobile'}
+                    alt=""
                     className="img"
                     style={{maxHeight: maxHeight + "px", maxWidth: maxWidth + 'px'}}
                     src={props.obj.imgSrc}
@@ -43,6 +43,7 @@ function PanelR(props){
 
                 <img
                     id={'Panel' + props.obj.idNum + 'ImgPc'}
+                    alt=""
                     className="img"
                     style={{maxHeight: maxHeight + "px", maxWidth: maxWidth + 'px'}}
                     src={props.obj.imgSrc}

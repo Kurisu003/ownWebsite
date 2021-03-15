@@ -93,7 +93,7 @@ $highlightColor: #00B7EF;
         
     height: 70px;
     min-width: 200px;
-    width: 260px;
+    width: 400px;
     margin-right: 50px;
     margin-left: 50px;
     margin-top: 50px;
@@ -111,7 +111,8 @@ $highlightColor: #00B7EF;
     border-bottom-right-radius: 0px;
     border-top-right-radius: 10px;
 
-    width: 80%;
+    // width: 80%;
+    width: 400px;
 }
 
 // Qualifications Content
@@ -119,9 +120,9 @@ $highlightColor: #00B7EF;
     transition: all 300ms ease-in-out 0ms;
     background-color: $textColor;
     max-height: 0px;
-    width: 80%;
+    width: 400px;
     margin-left: 50px;
-    margin-right: 50px;
+    // margin-right: 50px;
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
     display: block;
@@ -147,4 +148,19 @@ $highlightColor: #00B7EF;
     display: flex;
     align-items: center;
     user-select: none;
+}
+
+.tabContainer{
+    display: inline-flex;
+    width: 100%;
+    flex-wrap: wrap;
+    flex-flow: row wrap;
+    position: absolute;
+    height: 70%;
+}
+
+.tabWrapper{
+    // min-height: 100px;
+    height: 400px;
+    width: 500;
 }

@@ -14,7 +14,7 @@ function QPanel(props) {
     let imgsrc = require("../Svgs/" + props.logoName);
 
     return (
-    <div style={{minHeight: 110}}>
+    <div className='tabWrapper'>
         <div
             className={'QH' + (isOpen ? classNameSuffix + 'QH' : '')}
             onClick={() => setIsOpen(!isOpen)}

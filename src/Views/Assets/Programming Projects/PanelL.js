@@ -12,6 +12,7 @@ function PanelL(props){
                 
                 <img
                     id="img"
+                    alt=""
                     className="img"
                     style={{maxHeight: maxHeight + "px"}}
                     src={props.obj.imgSrc}

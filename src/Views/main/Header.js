@@ -3,7 +3,9 @@ import React from 'react'
 import '../../style/Header/MobilHeader.css'
 import '../../style/Header/PcHeader.css'
 import '../../style/Header/Header.css'
-import TopRoundPart from '../Assets/TopRoundPart'
+
+import navColorClickHandler from '../../Components/clickHandler'
+import TopRoundPart from '../Assets/Header/TopRoundPart'
 
 import { Link } from "react-router-dom"
 
@@ -27,42 +29,13 @@ function Header(){
         setIsMenuOpen(!isMenuOpen);
     }
 
-    //Used to change color of header elements when navigated
-    //to with buttons
-    function clickHandler(attr){
-
-        let primColor = 'white';
-        let secColor  = '#1B8BC9';
-
-        setIsMenuOpen(false)
-        // resets all buttons and only changes the color of the neccesary one
-        document.getElementById('homePc').style.color = primColor;
-        document.getElementById('projectsPc').style.color = primColor;
-        document.getElementById('contactPc').style.color = primColor;
-        document.getElementById('qualificationsPc').style.color = primColor;
-
-        document.getElementById('homeMobile').style.color = primColor;
-        document.getElementById('projectsMobile').style.color = primColor;
-        document.getElementById('contactMobile').style.color = primColor;
-        document.getElementById('qualificationsMobile').style.color = primColor;
-
-        switch(attr){
-            case 'homePc' : document.getElementById(attr).style.color = secColor; break;
-            case 'projectsPc' : document.getElementById(attr).style.color = secColor; break;
-            case 'contactPc' : document.getElementById(attr).style.color = secColor; break;
-            case 'qualificationsPc' : document.getElementById(attr).style.color = secColor; break;
-            
-            case 'homeMobile' : document.getElementById(attr).style.color = secColor; break;
-            case 'projectsMobile' : document.getElementById(attr).style.color = secColor; break;
-            case 'contactMobile' : document.getElementById(attr).style.color = secColor; break;
-            case 'qualificationsMobile' : document.getElementById(attr).style.color = secColor; break;
-        }
-    }
+    
 
     //Used to color elements in header even if page is loaded directly
     document.addEventListener('readystatechange', event => { 
         // When window loaded ( external resources are loaded too- `css`,`src`, etc...) 
         if (event.target.readyState === "complete") {
+            console.log('test')
             if(window.location.pathname.endsWith('Home')){
                 document.getElementById('homePc').style.color = '#1B8BC9';
                 document.getElementById('homeMobile').style.color = '#1B8BC9';
@@ -110,7 +83,7 @@ function Header(){
                                 <p
                                     className="navButton blueOnHover"
                                     id="homePc"
-                                    onClick={ () => clickHandler('homePc')}>
+                                    onClick={ () => navColorClickHandler('home')}>
                                     Home
                                 </p>
 
@@ -127,7 +100,7 @@ function Header(){
                                 <p
                                     className="navButton blueOnHover"
                                     id="projectsPc"
-                                    onClick={ () => clickHandler('projectsPc')}>
+                                    onClick={ () => navColorClickHandler('projects')}>
                                     Projekte
                                 </p>
 
@@ -145,7 +118,7 @@ function Header(){
                                 <p
                                     className="navButton blueOnHover"
                                     id="qualificationsPc"
-                                    onClick={ () => clickHandler('qualificationsPc')}>
+                                    onClick={ () => navColorClickHandler('qualifications')}>
                                     Qualifikationen
                                 </p>
 
@@ -163,7 +136,7 @@ function Header(){
                                 <p
                                     className="navButton blueOnHover"
                                     id="contactPc"
-                                    onClick={ () => clickHandler('contactPc')}>
+                                    onClick={ () => navColorClickHandler('contact')}>
                                     Kontakt
                                 </p>
 
@@ -212,6 +185,7 @@ function Header(){
 
                         <img
                             className="newLogo"
+                            alt=""
                             src="https://cdn.discordapp.com/attachments/806161925163581531/815674562330755153/HuskyLogo.png"></img>
 
                         {/* Displays Menu in the middle aka. actual Menu part */}
@@ -222,7 +196,7 @@ function Header(){
                             <Link
                                 to="/Home"
                                 className="noUnderline blueOnHover"
-                                onClick={ () => clickHandler('homeMobile')}
+                                onClick={ () => {navColorClickHandler('home'); setIsMenuOpen(false)}}
                             >
                                 <div
                                     className={isMenuOpen ? "MenuPoint" : "none"}>
@@ -239,7 +213,7 @@ function Header(){
                             <Link
                                 to="/Projects"
                                 className="noUnderline blueOnHover"
-                                onClick={ () => clickHandler('projectsMobile')}
+                                onClick={ () => {navColorClickHandler('projects'); setIsMenuOpen(false)}}
                             >
                                 <div
                                     className={isMenuOpen ? "MenuPoint" : "none"}>
@@ -255,7 +229,7 @@ function Header(){
                             <Link
                                 to="/Qualifications"
                                 className="noUnderline blueOnHover"
-                                onClick={ () => clickHandler('qualificationsMobile')}
+                                onClick={ () => {navColorClickHandler('qualifications'); setIsMenuOpen(false)}}
                             >
 
                                 <div
@@ -272,7 +246,7 @@ function Header(){
                             <Link
                                 to="/Contact"
                                 className="noUnderline blueOnHover"
-                                onClick={ () => clickHandler('contactMobile')}
+                                onClick={ () => {navColorClickHandler('contact'); setIsMenuOpen(false)}}
                             >
                                 <div
                                     className={isMenuOpen ? "MenuPoint" : "none"}>

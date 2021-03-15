@@ -6,20 +6,17 @@ from "react-router-dom"
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-import Navigation from './Components/Navigation';
 import Header from './Views/main/Header'
 import Home from './Views/main/Home'
 import Projects from './Views/main/Projects'
 import Qualifications from './Views/main/Qualifications'
 import Contact from './Views/main/Contact'
-import LinkTree from './Views/main/Linktree'
 
 function App() {
 
   return (
 	<div className="App h-100" style={{backgroundColor: 'white'}}>
 		<Router>
-			<Navigation/>
 
 			<Header></Header>
 
@@ -38,10 +35,6 @@ function App() {
 
 				<Route exact path="/contact">
 					<Contact/>
-				</Route>
-
-				<Route exact path="/linktree">
-					<LinkTree/>
 				</Route>
 			</Switch>
 		</Router>

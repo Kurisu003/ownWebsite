@@ -1,5 +1,6 @@
 import React from 'react'
 import '../../style/home/homeStyle.css'
+import navColorClickHandler from '../../Components/clickHandler'
 
 import { Link } from "react-router-dom"
 
@@ -40,6 +41,11 @@ function Home(){
             <Link
                 to="/Projects"
                 className="noUnderline blueOnHover"
+                onClick={() => {
+                navColorClickHandler('projects')
+                // To change color of Projekt when button is clicked
+                // navColorClickHandler('projectsMobile')
+            }}
             >
                 <div id='HomeMainButtonDiv'>
                     <p id='HomeMainButton'>

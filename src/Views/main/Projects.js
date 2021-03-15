@@ -4,10 +4,10 @@ import '../../style/projects/projectsStyle.css'
 import PanelL from '../Assets/Programming Projects/PanelL'
 import PanelR from '../Assets/Programming Projects/PanelR'
 
-import DividerBottomColor1 from '../Assets/DividerBottomColor1'
-import DividerTopColor1 from '../Assets/DividerTopColor1'
-import DividerBottomColor2 from '../Assets/DividerBottomColor2'
-import DividerTopColor2 from '../Assets/DividerTopColor2'
+import DividerBottomColor1 from '../Assets/Programming Projects/Dividers/DividerBottomColor1'
+import DividerTopColor1 from '../Assets/Programming Projects/Dividers/DividerTopColor1'
+import DividerBottomColor2 from '../Assets/Programming Projects/Dividers/DividerBottomColor2'
+import DividerTopColor2 from '../Assets/Programming Projects/Dividers/DividerTopColor2'
 
 function Projects(){
 
@@ -32,7 +32,7 @@ function Projects(){
         maxHeightPc: '500',
         maxWidthMobile: '240',
         maxWidthPc: '300',
-        href:'http://paketdienst.tk',
+        href:'https://github.com/Kurisu003/Giftcard-Creator',
         idNum: '2'
     }
 
@@ -43,7 +43,7 @@ function Projects(){
         <strong> 26<sup>4</sup> möglichen Urls </strong>],
         maxHeightMobile: '300',
         maxHeightPc: '500',
-        href: '',
+        href: 'https://github.com/Kurisu003/Url-Shortener',
     }
 
     let hammingCode = {
@@ -55,7 +55,7 @@ function Projects(){
         maxHeightPc: '500',
         maxWidthMobile: '400',
         maxWidthPc: '600',
-        href:'http://paketdienst.tk',
+        href:'https://github.com/Kurisu003/Hamming-Code',
         idNum: '4'        
     }
 
