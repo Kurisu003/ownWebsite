@@ -63,7 +63,7 @@ function Projects(){
     let cal = {
         title: 'Kalender für die Südtiroler Spengler Innung',
         imgSrc: 'https://cdn.discordapp.com/attachments/613625981219110914/821283077841223710/Calendar_Front.jpg',
-        text: 'Ein wundervoll gestalteter Kalender in Kolaboration mit der Südtiroler Spengler Innung',
+        text: 'Ein wundervoll gestalteter Kalender für die Südtiroler Spengler Innung',
         width: '500',
         href: 'https://imgur.com/a/AR5GuJb'
 
@@ -86,12 +86,22 @@ function Projects(){
     }
 
     let spengLogo = {
-        title: 'Geupdatetes und geupscaltes Spengler Innungs Logo',
+        title: 'Upgedatetes und upgescaletes Spengler Innungs Logo',
         imgSrc: 'https://cdn.discordapp.com/attachments/613625981219110914/821318498504015922/Spengler_Logo.png',
-        text: 'Das alte Logo der Südtiroler Spengler Innung geupdated und geupscalet',
+        text: 'Das alte Logo der Südtiroler Spengler Innung upgedatetes und upgescaletes',
         width: '500',
         href: 'https://imgur.com/a/eoD0G0u'
     }
+
+    let skytrekCard = {
+        title: 'Skytrek Gutschein Karte',
+        imgSrc: 'https://cdn.discordapp.com/attachments/613625981219110914/821380927279071232/FamilieKarteVorlage.png',
+        text: 'Individuell gestaltete Gutscheine für den Skytrek Kletterpark Sterzing',
+        width: '500',
+        href: 'https://imgur.com/a/CYWiJTl'
+    }
+
+    let DesProj = [cal, tpLogo, myLogo, spengLogo, skytrekCard]
 
     return(
         <div className="parent">
@@ -102,6 +112,7 @@ function Projects(){
                 </div>
 
                 <div style={{backgroundColor: '#97ddcd'}}>
+                    
                     <PanelL obj={tsp}/>
                     <PanelR obj={giftGen}/>
                     <PanelL obj={urlShort}/>
@@ -119,10 +130,7 @@ function Projects(){
                 </div>
 
                 <div style={{backgroundColor: '#AAD688'}}>
-                    <DesPanel obj={cal}/>
-                    <DesPanel obj={tpLogo}/>
-                    <DesPanel obj={myLogo}/>
-                    <DesPanel obj={spengLogo}/>
+                    {DesProj.map((element) => {return(<DesPanel obj={element} />)})}
                 </div>
                     
             <DividerBottomColor2/>
