@@ -24,7 +24,7 @@ function PanelR(props){
                 <div id="textDiv" className="textDiv">
                     <p 
                         className="title">
-                        Gutschein Generator
+                        {props.obj.title}
                     </p>
                     
                     <p
