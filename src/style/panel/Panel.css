@@ -15,8 +15,7 @@
 }
 
 .img {
-  height: 500px;
-  width: 600px;
+  height: 'auto';
   max-width: 95%;
   border-radius: 20px;
 }
@@ -126,5 +125,34 @@
   #Panel4ImgPc {
     display: none;
   }
+}
+
+.DesProjPanelTitle {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 500;
+  font-size: 30px;
+  color: white;
+}
+
+.DesProjPanelText {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 500;
+  font-size: 25px;
+  color: white;
+  max-width: 500px;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+.DesProjImgWrapper {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.DesProjPanelWrapper {
+  margin-left: 5%;
 }
 /*# sourceMappingURL=Panel.css.map */

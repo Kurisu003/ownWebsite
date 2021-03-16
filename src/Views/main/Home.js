@@ -43,8 +43,6 @@ function Home(){
                 className="noUnderline blueOnHover"
                 onClick={() => {
                 navColorClickHandler('projects')
-                // To change color of Projekt when button is clicked
-                // navColorClickHandler('projectsMobile')
             }}
             >
                 <div id='HomeMainButtonDiv'>

@@ -1,8 +1,9 @@
 import React from 'react'
 import '../../style/projects/projectsStyle.css'
 
-import PanelL from '../Assets/Programming Projects/PanelL'
-import PanelR from '../Assets/Programming Projects/PanelR'
+import PanelL from '../Assets/Programming Projects/ProgPanelL'
+import PanelR from '../Assets/Programming Projects/ProgPanelR'
+import DesPanel from '../Assets/Programming Projects/DesPanel'
 
 import DividerBottomColor1 from '../Assets/Programming Projects/Dividers/DividerBottomColor1'
 import DividerTopColor1 from '../Assets/Programming Projects/Dividers/DividerTopColor1'
@@ -59,6 +60,39 @@ function Projects(){
         idNum: '4'        
     }
 
+    let cal = {
+        title: 'Kalender für die Südtiroler Spengler Innung',
+        imgSrc: 'https://cdn.discordapp.com/attachments/613625981219110914/821283077841223710/Calendar_Front.jpg',
+        text: 'Ein wundervoll gestalteter Kalender in Kolaboration mit der Südtiroler Spengler Innung',
+        width: '500',
+        href: 'https://imgur.com/a/AR5GuJb'
+
+    }
+
+    let tpLogo = {
+        title: 'Redisigntes Logo für Trenkwlader & Partner',
+        imgSrc: 'https://cdn.discordapp.com/attachments/613625981219110914/821315115529928774/Logo_mit_Schatten.png',
+        text: 'Die Neugestaltung des alten Trenkwalder und Partner Logos. Modernisiert und minimalisiert!',
+        width: '500',
+        href: 'https://imgur.com/a/GMriUkW'
+    }
+
+    let myLogo = {
+        title: 'Mein eigenes, selbst designtes Logo',
+        imgSrc: 'https://cdn.discordapp.com/attachments/613625981219110914/821316487226064896/Husky_Logo_Final.png',
+        text: 'Mein Eigenes, mit Photoshop und Illustrator, designtes modernes Husky Logo',
+        width: '500',
+        href: 'https://imgur.com/a/wSLdQPJ'
+    }
+
+    let spengLogo = {
+        title: 'Geupdatetes und geupscaltes Spengler Innungs Logo',
+        imgSrc: 'https://cdn.discordapp.com/attachments/613625981219110914/821318498504015922/Spengler_Logo.png',
+        text: 'Das alte Logo der Südtiroler Spengler Innung geupdated und geupscalet',
+        width: '500',
+        href: 'https://imgur.com/a/eoD0G0u'
+    }
+
     return(
         <div className="parent">
             <DividerTopColor1 />
@@ -66,6 +100,7 @@ function Projects(){
                 <div className="ProjectTitle" id='ProgrammingProjects'>
                     Programmier-Projekte
                 </div>
+
                 <div style={{backgroundColor: '#97ddcd'}}>
                     <PanelL obj={tsp}/>
                     <PanelR obj={giftGen}/>
@@ -82,35 +117,16 @@ function Projects(){
                 <div className="ProjectTitle" id="DesignProjects">
                     Design-Projekte
                 </div>
-            
-            <DividerBottomColor2/>
-            {/* <RightPanel1></RightPanel1> */}
 
-            {/* <div className="imgDiv">
-                <img className="img" src="https://cdn.discordapp.com/attachments/613625981219110914/814968350757224519/Paketdienst.png"></img>
-
-                <div>
-                    <p
-                        className="title">
-                        Traveling Salesman
-                    </p>
-                    <p
-                        className="text">
-                        Hier hat man eine bestimmte Anzahl von Knoten, welche man jeweils einmal besuchen muss.
-                        Der Startpunkt ist gleichzeitig der Endpunkt und wird deshalb zweimal besucht. Hier werden
-                        mehrere, auf einem <strong> Backend Java-Server </strong> laufende, Algorithmen in verwendet,
-                        welche auf einer mit <strong> HTML, Bootstrap </strong> und <strong> CSS </strong> wundervoll
-                        gestalteten Website mit <strong> Javascript </strong> abgerufen werden
-                    </p>
-                    <div className="linkDiv">
-                        <a
-                            href="http://paketdienst.tk"
-                            className="link">
-                            Website
-                        </a>
-                    </div>
+                <div style={{backgroundColor: '#AAD688'}}>
+                    <DesPanel obj={cal}/>
+                    <DesPanel obj={tpLogo}/>
+                    <DesPanel obj={myLogo}/>
+                    <DesPanel obj={spengLogo}/>
                 </div>
-            </div> */}
+                    
+            <DividerBottomColor2/>
+            
 
         </div>
     )
