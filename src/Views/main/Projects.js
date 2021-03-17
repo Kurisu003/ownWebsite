@@ -21,7 +21,8 @@ function Projects(){
         gestalteten Website mit`, <strong> Javascript </strong>, ` abgerufen werden.`],
         maxHeightMobile: '300',
         maxHeightPc: '500',
-        href:'http://paketdienst.tk'
+        href:'http://paketdienst.tk',
+        linkText: 'Website'
     }
 
     let giftGen = {
@@ -34,7 +35,8 @@ function Projects(){
         maxWidthMobile: '240',
         maxWidthPc: '300',
         href:'https://github.com/Kurisu003/Giftcard-Creator',
-        idNum: '2'
+        idNum: '2',
+        linkText: 'Github'
     }
 
     let urlShort = {
@@ -45,6 +47,7 @@ function Projects(){
         maxHeightMobile: '300',
         maxHeightPc: '500',
         href: 'https://github.com/Kurisu003/Url-Shortener',
+        linkText: 'Github'
     }
 
     let hammingCode = {
@@ -57,7 +60,8 @@ function Projects(){
         maxWidthMobile: '400',
         maxWidthPc: '600',
         href:'https://github.com/Kurisu003/Hamming-Code',
-        idNum: '4'        
+        idNum: '4',
+        linkText: 'Github'
     }
 
     let cal = {
@@ -66,7 +70,6 @@ function Projects(){
         text: 'Ein wundervoll gestalteter Kalender für die Südtiroler Spengler Innung',
         width: '500',
         href: 'https://imgur.com/a/AR5GuJb'
-
     }
 
     let tpLogo = {

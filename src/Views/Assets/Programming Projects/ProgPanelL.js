@@ -34,7 +34,7 @@ function PanelL(props){
                         <a 
                             href={props.obj.href}
                             className="link">
-                            Website
+                            {props.obj.linkText}
                         </a>
                     </div>
                 </div>

@@ -36,7 +36,7 @@ function PanelR(props){
                         <a 
                             href={props.obj.href}
                             className="link">
-                            Git-Hub
+                            {props.obj.linkText}
                         </a>
                     </div>
                 </div>

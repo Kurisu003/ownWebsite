@@ -39,6 +39,7 @@ function Qualifications() {
         buttonInfo: [
             ['Fourier-Series','https://github.com/Kurisu003/Fourier-Series-JS'],
             ['2-Line Hamming-Code','https://github.com/Kurisu003/Hamming-Code/tree/main/JS'],
+            ['React js','https://github.com/Kurisu003/ownWebsite'],
         ]
         
     }]
@@ -79,7 +80,7 @@ function Qualifications() {
         
     }]
 
-    let array = [j, c, js, asm, py, bat]
+    let array = [js, j, c, py, bat, asm]
 
     return(
         <div className='tabContainer'>
