@@ -119,7 +119,7 @@ function Header(){
                                     className="navButton blueOnHover"
                                     id="qualificationsPc"
                                     onClick={ () => navColorClickHandler('qualifications')}>
-                                    Qualifikationen
+                                    Kompetenzen
                                 </p>
 
                             </Link>
@@ -221,7 +221,7 @@ function Header(){
                                     <p
                                         className="MenuPointText"
                                         id="projectsMobile">
-                                        Projects
+                                        Projekte
                                     </p>
                                 </div>
                             </Link>
@@ -238,7 +238,7 @@ function Header(){
                                     <p
                                         className="MenuPointText"
                                         id="qualificationsMobile">
-                                        Qualifications
+                                        Kompetenzen
                                     </p>
                                 </div>
                             </Link>
@@ -254,7 +254,7 @@ function Header(){
                                     <p
                                         className="MenuPointText"
                                         id="contactMobile">
-                                        Contact
+                                        Kontakt
                                     </p>
                                 </div>
                             </Link>

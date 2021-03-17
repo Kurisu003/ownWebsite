@@ -25,8 +25,7 @@ function Qualifications() {
         logoName: 'C.svg',
 
         buttonInfo: [
-            ['Shell','https://github.com'],
-            ['Tic-Tac-Toe','https://github.com'],
+            ['Shell','https://github.com/Kurisu003/Shell'],
         ]
         
     }]
@@ -80,7 +79,18 @@ function Qualifications() {
         
     }]
 
-    let array = [js, j, c, py, bat, asm]
+    let ps = [{
+        name: 'Photoshop',
+
+        logoName: 'psLogo.svg',
+
+        buttonInfo: [
+            ['Mehrere Logo Designs','https://github.com/Kurisu003/Logos/blob/main/Designs.txt'],
+        ]
+        
+    }]
+
+    let array = [js, j, c, py, bat, asm, ps]
 
     return(
         <div className='tabContainer'>
