@@ -1,5 +1,3 @@
-import React from 'react'
-
 //Used to change color of header elements when navigated
 //to with buttons
 export default function naviColorClickHandler(setterId){
