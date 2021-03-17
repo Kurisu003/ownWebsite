@@ -75,7 +75,7 @@ function Contact(){
 
                         <a
                             style={{paddingLeft: 5}}
-                            href=''
+                            href='https://google.com'
                         >
                             E-Mail
                         </a>
@@ -95,7 +95,7 @@ function Contact(){
 
                         <a 
                             style={{paddingLeft: 5}}
-                            href=''
+                            href='https://google.com'
                         >
                             Phone
                         </a>
@@ -115,7 +115,7 @@ function Contact(){
 
                         <a 
                             style={{paddingLeft: 5}}
-                            href=''
+                            href='https://google.com'
                         >
                             Instagram
                         </a>
