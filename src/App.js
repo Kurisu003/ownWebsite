@@ -1,7 +1,8 @@
 import {
 	BrowserRouter as Router,
 	Switch,
-	Route}
+	Route,
+	Redirect}
 from "react-router-dom"
 
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -21,6 +22,9 @@ function App() {
 			<Header></Header>
 
 			<Switch>
+				<Route exact path='/'>
+					<Redirect to="/Home" />
+				</Route>
 				<Route exact path="/Home">
 					<Home/>
 				</Route>
