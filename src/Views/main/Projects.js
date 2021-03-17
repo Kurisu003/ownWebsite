@@ -83,7 +83,7 @@ function Projects(){
     let myLogo = {
         title: 'Mein eigenes, selbst designtes Logo',
         imgSrc: 'https://cdn.discordapp.com/attachments/613625981219110914/821316487226064896/Husky_Logo_Final.png',
-        text: 'Mein Eigenes, mit Photoshop und Illustrator, designtes modernes Husky Logo',
+        text: 'Mein eigenes, mit Photoshop und Illustrator, designtes modernes Husky Logo',
         width: '500',
         href: 'https://imgur.com/a/wSLdQPJ'
     }
@@ -91,7 +91,7 @@ function Projects(){
     let spengLogo = {
         title: 'Upgedatetes und upgescaletes Spengler Innungs Logo',
         imgSrc: 'https://cdn.discordapp.com/attachments/613625981219110914/821318498504015922/Spengler_Logo.png',
-        text: 'Das alte Logo der Südtiroler Spengler Innung upgedatetes und upgescaletes',
+        text: 'Das alte Logo der Südtiroler Spengler Innung, upgedatet und upgescalet',
         width: '500',
         href: 'https://imgur.com/a/eoD0G0u'
     }
