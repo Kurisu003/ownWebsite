@@ -21,6 +21,8 @@
 
 #CarouselImage {
   border-radius: 30px;
+  max-height: 400px;
+  overflow: hidden;
 }
 
 #text1div.text1div {
