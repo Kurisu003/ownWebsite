@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react';
 
 import '../../style/Header/MobilHeader.css'
 import '../../style/Header/PcHeader.css'
@@ -32,9 +32,8 @@ function Header(){
     
 
     //Used to color elements in header even if page is loaded directly
-    document.addEventListener('readystatechange', event => { 
-        // When window loaded ( external resources are loaded too- `css`,`src`, etc...) 
-        if (event.target.readyState === "complete") {
+
+    useEffect(() => { 
             console.log('test')
             if(window.location.pathname.endsWith('Home')){
                 document.getElementById('homePc').style.color = '#1B8BC9';
@@ -53,7 +52,7 @@ function Header(){
                 document.getElementById('contactMobile').style.color = '#1B8BC9';
             }
         }
-    });
+    )
     
 
     return(
