@@ -17,7 +17,7 @@ function PanelL(props){
                 <div>
                     <p className='DesProjPanelText'>{props.obj.text}</p>
                     <div className='linkDiv'>
-                        <a className='link' href={props.obj.href}>Mehr!</a>
+                        <a className='link' href={props.obj.href} target="_blank">Mehr!</a>
                     </div>
                 </div>
             </div>
