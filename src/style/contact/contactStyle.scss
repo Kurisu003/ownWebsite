@@ -1,17 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap");
 
-$header:#D0EFFF;
-$textColor: #023A51;
-$highlightColor: #00B7EF;
+$header: #d0efff;
+$textColor: #023a51;
+$highlightColor: #00b7ef;
 
-#parent.parent{
+#parent.parent {
     display: flex;
     justify-content: center;
-    
+
     width: 100%;
 }
 
-#infoContainer.infoContainer{
+#infoContainer.infoContainer {
     display: inline-flex;
     align-items: center;
     justify-content: space-around;
@@ -22,10 +22,12 @@ $highlightColor: #00B7EF;
     padding-top: 50px;
 
     border-radius: 30px;
-    background-color: #023A51;
+    background-color: #023a51;
+
+    filter: drop-shadow(0.7rem 0.7rem 1rem #002d44a6);
 }
 
-#imgContainer{
+#imgContainer {
     display: inline-flex;
     flex-direction: column;
     align-items: center;
@@ -34,46 +36,47 @@ $highlightColor: #00B7EF;
     margin-right: 10px;
 }
 
-#personalImage.img{
+#personalImage.img {
     border-radius: 999px;
     margin-top: 20px;
+
 }
 
-#name{
+#name {
     color: white;
-    font-family: 'Quicksand', sans-serif;
+    font-family: "Quicksand", sans-serif;
     font-weight: bold;
     font-size: 24px;
 }
 
-.text{
+.text {
     color: white;
-    font-family: 'Quicksand', sans-serif;
+    font-family: "Quicksand", sans-serif;
 }
 
-#textDiv{
+#textDiv {
     margin-left: 10px;
     margin-right: 10px;
 }
 
-#title{
+#title {
     font-size: 30px;
     font-weight: bold;
 }
 
-#text{
+#text {
     font-size: 20px;
     font-weight: bold;
     width: 350px;
 }
 
 @media only screen and (max-width: 580px) {
-	#text{
-		width: 250px;
-	}
+    #text {
+        width: 250px;
+    }
 }
 
-.contactButton{
+.contactButton {
     color: white;
     text-decoration: none;
     background-color: $highlightColor;
@@ -89,8 +92,8 @@ $highlightColor: #00B7EF;
     border-radius: 999px;
 }
 
-#contactButton{
-    &:hover{
+#contactButton {
+    &:hover {
         background-color: $textColor;
         -webkit-transition: background-color 200ms ease-in-out;
         -ms-transition: background-color 200ms ease-in-out;
@@ -101,20 +104,27 @@ $highlightColor: #00B7EF;
         -webkit-transition: border-color 200ms ease-in-out;
         -ms-transition: border-color 200ms ease-in-out;
         transition: border-color 200ms ease-in-out;
-        
+
         text-decoration: none;
-        #Icon{
+        #Icon {
             color: $highlightColor;
             -webkit-transition: color 200ms ease-in-out;
             -ms-transition: color 200ms ease-in-out;
             transition: color 200ms ease-in-out;
         }
-        a{            
+        a {
             color: $highlightColor;
             -webkit-transition: color 200ms ease-in-out;
             -ms-transition: color 200ms ease-in-out;
             transition: color 200ms ease-in-out;
         }
     }
-    
+}
+
+.innerLink {
+    padding-left: 5px;
+    color: white;
+    &:hover {
+        text-decoration: none;
+    }
 }

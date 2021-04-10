@@ -74,8 +74,8 @@ function Contact(){
                         />
 
                         <a
-                            style={{paddingLeft: 5}}
-                            href='https://google.com'
+                            className='innerLink'
+                            href="mailto:dani003@outlook.com"
                         >
                             E-Mail
                         </a>
@@ -94,8 +94,8 @@ function Contact(){
                         />
 
                         <a 
-                            style={{paddingLeft: 5}}
-                            href='https://google.com'
+                            className='innerLink'
+                            href="tel:00393345856711"
                         >
                             Phone
                         </a>
@@ -106,6 +106,7 @@ function Contact(){
                         id="contactButton"
                         className="contactButton text"
                         href="https://www.instagram.com/fusteam/"
+                        target="_blank"
                     >
 
                         <Instagram 
@@ -114,8 +115,9 @@ function Contact(){
                         />
 
                         <a 
-                            style={{paddingLeft: 5}}
-                            href='https://google.com'
+                            className='innerLink'
+                            href="https://www.instagram.com/fusteam/"
+                            target="_blank"
                         >
                             Instagram
                         </a>

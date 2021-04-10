@@ -1,13 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap");
 
-$header:#A4CDE2;
-$textColor: #023A51;
-$highlightColor: #00B7EF;
-
+$header: #a4cde2;
+$textColor: #023a51;
+$highlightColor: #00b7ef;
 
 // Github button
 // Qualification Content Button
-.QCB{
+.QCB {
     transition: opacity 300ms ease-in-out 0ms;
     display: flex;
     align-items: center;
@@ -15,7 +14,7 @@ $highlightColor: #00B7EF;
 
     visibility: hidden;
     opacity: 0;
-    
+
     width: 100px;
     height: 80%;
     margin-left: 20px;
@@ -26,7 +25,7 @@ $highlightColor: #00B7EF;
     background-color: $highlightColor;
     color: white;
 
-    &:hover{
+    &:hover {
         background-color: $textColor;
         -webkit-transition: background-color 200ms ease-in-out;
         -ms-transition: background-color 200ms ease-in-out;
@@ -37,8 +36,8 @@ $highlightColor: #00B7EF;
         -webkit-transition: border-color 200ms ease-in-out;
         -ms-transition: border-color 200ms ease-in-out;
         transition: border-color 200ms ease-in-out;
-        
-        text-decoration: none;     
+
+        text-decoration: none;
 
         color: $highlightColor;
         -webkit-transition: color 200ms ease-in-out;
@@ -47,7 +46,7 @@ $highlightColor: #00B7EF;
     }
 }
 
-.ExtendedQCB{
+.ExtendedQCB {
     transition: opacity 300ms ease-in-out 300ms;
     visibility: visible;
     opacity: 1;
@@ -55,8 +54,8 @@ $highlightColor: #00B7EF;
 
 // Title
 // Qualifications Header Title
-.QHTitle{
-    font-family: 'Quicksand', sans-serif;
+.QHTitle {
+    font-family: "Quicksand", sans-serif;
     font-weight: bold;
     font-size: 30px;
     margin-left: 20px;
@@ -65,32 +64,33 @@ $highlightColor: #00B7EF;
 }
 
 // Qualifications Conent Element
-.QCE{
+.QCE {
     transition: all 200ms ease-in-out 0ms;
     width: 100%;
     height: 50px;
     display: inline-flex;
     justify-content: space-between;
     align-items: center;
-    
+
     visibility: hidden;
     opacity: 0;
 }
 
-.ExtendedQCE{
+.ExtendedQCE {
     transition: all 300ms ease-in-out 300ms;
-    
+
     visibility: visible;
     opacity: 1;
 }
 
 // Qualifications Header aka. "button"
-.QH{
+.QH {
     background-color: $header;
-    
+
     display: flex;
     align-items: center;
-        
+    justify-content: space-between;
+
     height: 70px;
     min-width: 200px;
     max-width: 400px;
@@ -98,12 +98,12 @@ $highlightColor: #00B7EF;
     margin-left: 20px;
     margin-top: 50px;
     border-radius: 10px;
-    
+
     cursor: pointer;
     transition: all 300ms ease-in-out 300ms;
 }
 
-.ExtendedQH{
+.ExtendedQH {
     transition: all 300ms ease-in-out 0ms;
 
     border-bottom-left-radius: 0px;
@@ -115,8 +115,13 @@ $highlightColor: #00B7EF;
     // width: 400px;
 }
 
+.QHImgTxtWrapper {
+    display: flex;
+    align-items: center;
+}
+
 // Qualifications Content
-.QC{
+.QC {
     transition: all 300ms ease-in-out 0ms;
     background-color: $textColor;
     max-height: 0px;
@@ -129,7 +134,7 @@ $highlightColor: #00B7EF;
     justify-content: space-between;
 }
 
-.ExtendedQC{
+.ExtendedQC {
     transition: all 300ms ease-in-out 300ms;
     max-height: 999px;
     padding-bottom: 20px;
@@ -139,7 +144,7 @@ $highlightColor: #00B7EF;
 }
 
 // Qualifications Text
-.QCText{
+.QCText {
     margin-left: 20px;
     margin-right: 20px;
     margin-bottom: 0;
@@ -150,8 +155,9 @@ $highlightColor: #00B7EF;
     user-select: none;
 }
 
-.tabContainer{
+.tabContainer {
     display: inline-flex;
+    justify-content: space-evenly;
     width: 100%;
     max-width: 100vw;
     flex-wrap: wrap;
@@ -160,8 +166,9 @@ $highlightColor: #00B7EF;
     height: 70%;
 }
 
-.tabWrapper{
+.tabWrapper {
     // min-height: 100px;
     height: 400px;
     width: 420px;
+    filter: drop-shadow(0.7rem 0.7rem 1rem #002d44a6);
 }

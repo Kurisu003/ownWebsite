@@ -24,7 +24,9 @@
   padding-bottom: 50px;
   padding-top: 50px;
   border-radius: 30px;
-  background-color: #023A51;
+  background-color: #023a51;
+  -webkit-filter: drop-shadow(0.7rem 0.7rem 1rem #002d44a6);
+          filter: drop-shadow(0.7rem 0.7rem 1rem #002d44a6);
 }
 
 #imgContainer {
@@ -52,14 +54,14 @@
 
 #name {
   color: white;
-  font-family: 'Quicksand', sans-serif;
+  font-family: "Quicksand", sans-serif;
   font-weight: bold;
   font-size: 24px;
 }
 
 .text {
   color: white;
-  font-family: 'Quicksand', sans-serif;
+  font-family: "Quicksand", sans-serif;
 }
 
 #textDiv {
@@ -87,7 +89,7 @@
 .contactButton {
   color: white;
   text-decoration: none;
-  background-color: #00B7EF;
+  background-color: #00b7ef;
   width: 150px;
   height: 50px;
   display: -webkit-box;
@@ -104,24 +106,33 @@
 }
 
 #contactButton:hover {
-  background-color: #023A51;
+  background-color: #023a51;
   -webkit-transition: background-color 200ms ease-in-out;
   transition: background-color 200ms ease-in-out;
-  border: 2px solid #00B7EF;
+  border: 2px solid #00b7ef;
   -webkit-transition: border-color 200ms ease-in-out;
   transition: border-color 200ms ease-in-out;
   text-decoration: none;
 }
 
 #contactButton:hover #Icon {
-  color: #00B7EF;
+  color: #00b7ef;
   -webkit-transition: color 200ms ease-in-out;
   transition: color 200ms ease-in-out;
 }
 
 #contactButton:hover a {
-  color: #00B7EF;
+  color: #00b7ef;
   -webkit-transition: color 200ms ease-in-out;
   transition: color 200ms ease-in-out;
+}
+
+.innerLink {
+  padding-left: 5px;
+  color: white;
+}
+
+.innerLink:hover {
+  text-decoration: none;
 }
 /*# sourceMappingURL=contactStyle.css.map */

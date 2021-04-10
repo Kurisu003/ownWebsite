@@ -18,6 +18,8 @@
   height: 'auto';
   max-width: 95%;
   border-radius: 20px;
+  -webkit-filter: drop-shadow(0.7rem 0.7rem 1rem #002d44a6);
+          filter: drop-shadow(0.7rem 0.7rem 1rem #002d44a6);
 }
 
 .title {

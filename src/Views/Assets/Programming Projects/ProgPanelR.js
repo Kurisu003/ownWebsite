@@ -35,6 +35,7 @@ function PanelR(props){
                     <div className="linkDiv">
                         <a 
                             href={props.obj.href}
+                            target="_blank"
                             className="link">
                             {props.obj.linkText}
                         </a>
