@@ -12,6 +12,29 @@ import DividerTopColor2 from '../Assets/Programming Projects/Dividers/DividerTop
 
 function Projects(){
 
+    // let memMori = {
+    //     titel: 'Memento Mori (Videospiel)',
+    //     imgSrc: 'https://cdn.discordapp.com/attachments/613625981219110914/847409482673160212/unknown.png',
+    //     text: [`In Java geschriebener Top-Down dungeon crawler mit Teilweise eigenen Texturen
+    //     und einer eigenen, mit awt geschriebener, Game-Enginecmd`],
+    //     maxHeightMobile: '300',
+    //     maxHeightPc: '500',
+    //     href: 'https://github.com/Kurisu003/Memento-Mori',
+    //     linkText: 'Github'
+    // }
+    let memMori = {
+        titel: 'Memento Mori (Videospiel)',
+        imgSrc: 'https://cdn.discordapp.com/attachments/613625981219110914/847409482673160212/unknown.png',
+        text: [`In Java geschriebener Top-Down dungeon crawler mit Teilweise eigenen Texturen
+        und einer eigenen, mit awt geschriebener, Game-Engine`],
+        maxHeightMobile: '300',
+        maxHeightPc: '700',
+        maxWidthMobile: '300',
+        maxWidthPc: '700',
+        href: 'https://github.com/Kurisu003/Memento-Mori',
+        idNum: '6',
+        linkText: 'Github'
+    }
     let tsp = {
         title: 'Traveling Salesman',
         imgSrc: 'https://cdn.discordapp.com/attachments/613625981219110914/814968350757224519/Paketdienst.png',
@@ -21,7 +44,7 @@ function Projects(){
         gestalteten Website mit`, <strong> Javascript </strong>, ` abgerufen werden.`],
         maxHeightMobile: '300',
         maxHeightPc: '500',
-        href:'http://paketdienst.tk',
+        href: 'http://paketdienst.tk',
         linkText: 'Website'
     }
 
@@ -116,6 +139,7 @@ function Projects(){
 
                 <div style={{backgroundColor: '#97ddcd'}}>
                     
+                    <PanelR obj={memMori}/>
                     <PanelL obj={tsp}/>
                     <PanelR obj={giftGen}/>
                     <PanelL obj={urlShort}/>

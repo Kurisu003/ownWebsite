@@ -98,11 +98,28 @@ $hoverColor: #023A51;
     display: block;
 }
 
-@media only screen and (max-width: 984px) {
+@media only screen and (max-width: 300px) {
 	#Panel2ImgMobile {
 		display: block;
 	}
 	#Panel2ImgPc {
+        display: none;
+	}
+}
+
+#Panel6ImgMobile{
+    display: none;
+}
+
+#Panel6ImgPc{
+    display: block;
+}
+
+@media only screen and (max-width: 984px) {
+	#Panel6ImgMobile {
+		display: block;
+	}
+	#Panel6ImgPc {
         display: none;
 	}
 }

@@ -59,6 +59,21 @@ function Home(){
                     <img
                     id='CarouselImage'
                     className="d-block w-100"
+                    src="https://cdn.discordapp.com/attachments/613625981219110914/847417883872722954/unknown.png"
+                    alt="First slide"
+                    />
+
+                    <Carousel.Caption>
+                        <h3>Memento Mori</h3>
+                        <p>Videospiel in Java</p>
+                    </Carousel.Caption>
+
+                </Carousel.Item>
+                
+                <Carousel.Item>
+                    <img
+                    id='CarouselImage'
+                    className="d-block w-100"
                     src="https://cdn.discordapp.com/attachments/613625981219110914/821695304738406410/unknown.png"
                     alt="First slide"
                     />
