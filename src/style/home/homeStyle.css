@@ -1,5 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap");
-#HomeParent {
+#HomeParnetExterior {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: block;
+}
+
+#HomeParentInterior {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -10,6 +18,8 @@
           justify-content: space-between;
   width: 100%;
   margin-bottom: 50px;
+  padding-right: 100px;
+  padding-left: 100px;
 }
 
 #CarouselParent {
@@ -88,6 +98,20 @@
           justify-content: center;
 }
 
+#HomeServicesButtonDiv {
+  text-align: center;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 #HomeMainButton {
   background-color: #00B7EF;
   width: 200px;
@@ -116,7 +140,93 @@
   text-decoration: none;
 }
 
-@media only screen and (max-width: 1055px) {
+#HomeServicesButton {
+  background-color: #8ecae6;
+  width: 200px;
+  height: 50px;
+  margin-bottom: 0;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  color: white;
+  border-radius: 999px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#HomeServicesButton:hover {
+  background-color: #023A51;
+  -webkit-transition: background-color 200ms ease-in-out;
+  transition: background-color 200ms ease-in-out;
+  text-decoration: none;
+}
+
+#ServicesParent {
+  width: 100%;
+  height: 380px;
+  padding-left: 100px;
+  padding-right: 100px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.ServicesChild {
+  width: 33%;
+  background-color: #219ebc;
+  height: 100%;
+  margin-left: 20px;
+  margin-right: 20px;
+  border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.SercivesIconWrapper {
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.ServicesTextWrapper {
+  margin-top: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: center;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  color: white;
+}
+
+.ServicesIcon {
+  width: 100px;
+  -webkit-filter: invert(1);
+          filter: invert(1);
+}
+
+@media only screen and (max-width: 1255px) {
   #text1div.text1div {
     width: 100%;
     display: -webkit-box;
@@ -139,7 +249,7 @@
     max-width: 600px;
     word-wrap: wrap;
   }
-  #HomeParent {
+  #HomeParentInterior {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -149,6 +259,26 @@
   }
   #CarouselParent {
     width: 900px;
+  }
+  #ServicesParent {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 1500px;
+  }
+  .ServicesChild {
+    width: 100%;
+    background-color: red;
+    height: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 0px;
+    margin-right: 0px;
+    border-radius: 20px;
   }
 }
 /*# sourceMappingURL=homeStyle.css.map */

@@ -13,6 +13,10 @@ import Projects from './Views/main/Projects'
 import Qualifications from './Views/main/Qualifications'
 import Contact from './Views/main/Contact'
 
+import ServicesWebsite from './Views/main/ServicesWebsite'
+import ServicesLogo from './Views/main/ServicesLogo'
+import ServicesHelp from './Views/main/ServicesItHelp'
+
 function App() {
 
   return (
@@ -39,6 +43,19 @@ function App() {
 
 				<Route exact path="/contact">
 					<Contact/>
+				</Route>
+
+
+				<Route exact path="/serviceswebsite">
+					<ServicesWebsite/>
+				</Route>
+
+				<Route exact path="/serviceslogo">
+					<ServicesLogo/>
+				</Route>
+
+				<Route exact path="/serviceshelp">
+					<ServicesHelp/>
 				</Route>
 			</Switch>
 		</Router>

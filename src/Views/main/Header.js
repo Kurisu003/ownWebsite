@@ -34,8 +34,11 @@ function Header(){
     //Used to color elements in header even if page is loaded directly
 
     useEffect(() => { 
-            // console.log('test')
-            if(window.location.pathname.endsWith('Home')){
+            console.log('test')
+            if(window.location.pathname.endsWith('Home') 
+            || window.location.pathname.endsWith('serviceswebsite')
+            || window.location.pathname.endsWith('serviceslogo')
+            || window.location.pathname.endsWith('serviceshelp')){
                 document.getElementById('homePc').style.color = '#1B8BC9';
                 document.getElementById('homeMobile').style.color = '#1B8BC9';
             }
