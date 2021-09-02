@@ -53,7 +53,21 @@ function Contact(){
                         id="text"
                         className="text"
                     >
-                        Melde dich jederzeit bei mir. Jetzt auch auf Whatsapp
+                        Melde dich jederzeit bei mir. Jetzt auch auf Whatsapp.
+                    </p>
+                    
+                    <p 
+                        id="text"
+                        className="text"
+                    >
+                       +39 334 5856711
+                    </p>
+                    
+                    <p 
+                        id="text"
+                        className="text"
+                    >
+                       dani003@outlook.com
                     </p>
 
                 </div>
