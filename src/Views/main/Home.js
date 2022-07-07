@@ -3,7 +3,6 @@ import '../../style/home/homeStyle.css'
 import navColorClickHandler from '../../Components/clickHandler'
 
 import { Link } from "react-router-dom"
-
 import Carousel from 'react-bootstrap/Carousel'
 
 function Home(){
@@ -117,8 +116,9 @@ function Home(){
 
         </div>
 
+        {/* IMPLEMENTATION PENDING */}
         {/* Webdesign / Erster div */}
-        <div id='ServicesParent'>
+        {/* <div id='ServicesParent'>
             <div className='ServicesChild'>
                 <div className='SercivesIconWrapper'>
                     <img
@@ -131,7 +131,7 @@ function Home(){
                 <div className='ServicesTextWrapper'>
                     <p>
                         Webdesign auf ihre Bedürfnisse Abgestimmt.
-                        Egal ob einfache Landingpage oder komplexe Webdesigns.
+                        Egal ob einfache Landingpage oder komplexe Web-Applikationen.
                     </p>
                 </div>
 
@@ -149,10 +149,11 @@ function Home(){
                     </div>
                 </Link>
                 
-            </div>
+            </div> */}
 
+            {/* IMPLEMENTATION PENDING */}
             {/* Logo design / Zweiter div */}
-            <div className='ServicesChild'>
+            {/* <div className='ServicesChild'>
                 <div className='SercivesIconWrapper'>
                     <img
                         className='ServicesIcon'
@@ -164,25 +165,33 @@ function Home(){
                 <div className='ServicesTextWrapper'>
                     <p>
                         Lassen Sie uns das perfekte Logo für Sie gestalten.
-                        Egal ob minimalistisch und modern, abstrakt oder etwas ihrer Wahl.
+                        Egal ob minimalistisch und modern oder abstrakt. Wir beraten Sie gerne und helfen ihnen das perfekte Design zu finden.
                     </p>
                 </div>
 
                 <Link
-                    to="/serviceslogo"
+                    to="/Projects"
                     className="noUnderline blueOnHover"
                 >
                     <div id='HomeServicesButtonDiv'>
-                        <p id='HomeServicesButton'>
+                        <p id='HomeServicesButton' onClick={() => {
+                            // scroller.scrollTo("ProjectTitle1", {
+                            //     duration: 800,
+                            //     delay: 0,
+                            //     smooth: "easeInOutQuart",
+                            // });
+                            console.log("test")  
+                            }}>
                             Jetzt mehr erfahren!
                         </p>
                     </div>
                 </Link>
                 
-            </div>
+            </div> */}
 
+            {/* IMPLEMENTATION PENDING */}
             {/* It Hilfe / dritter div */}
-            <div className='ServicesChild'>
+            {/* <div className='ServicesChild'>
                 <div className='SercivesIconWrapper'>
                     <img
                         className='ServicesIcon'
@@ -194,7 +203,7 @@ function Home(){
                 <div className='ServicesTextWrapper'>
                     <p>
                         Wir helfen gerne bei Problemen mit ihrem PC, Smartphone
-                        oder Tablet. Kontaktieren Sie uns um Hilfe zu erhalten.
+                        oder Tablet. Egal ob Software- oder Hardwareprobleme, kontaktieren Sie uns um Hilfe zu erhalten.
                     </p>
                 </div>
 
@@ -211,7 +220,7 @@ function Home(){
                 
             </div>
   
-        </div>
+        </div> */}
     </div>
     )
 }

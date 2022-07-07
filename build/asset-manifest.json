@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/static/css/main.1cb5d599.chunk.css",
+    "main.js": "/static/js/main.5f1faca7.chunk.js",
+    "main.js.map": "/static/js/main.5f1faca7.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.1a4ef639.js",
+    "runtime-main.js.map": "/static/js/runtime-main.1a4ef639.js.map",
+    "static/css/2.8c502dfb.chunk.css": "/static/css/2.8c502dfb.chunk.css",
+    "static/js/2.8e0108c6.chunk.js": "/static/js/2.8e0108c6.chunk.js",
+    "static/js/2.8e0108c6.chunk.js.map": "/static/js/2.8e0108c6.chunk.js.map",
+    "static/js/3.acd94115.chunk.js": "/static/js/3.acd94115.chunk.js",
+    "static/js/3.acd94115.chunk.js.map": "/static/js/3.acd94115.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/2.8c502dfb.chunk.css.map": "/static/css/2.8c502dfb.chunk.css.map",
+    "static/css/main.1cb5d599.chunk.css.map": "/static/css/main.1cb5d599.chunk.css.map",
+    "static/js/2.8e0108c6.chunk.js.LICENSE.txt": "/static/js/2.8e0108c6.chunk.js.LICENSE.txt",
+    "static/media/AsmLogo.svg": "/static/media/AsmLogo.b077b668.svg",
+    "static/media/BatLogo.svg": "/static/media/BatLogo.61984412.svg",
+    "static/media/C.svg": "/static/media/C.a6e28c9c.svg",
+    "static/media/JSLogo.svg": "/static/media/JSLogo.00f3e5cf.svg",
+    "static/media/JavaLogo.svg": "/static/media/JavaLogo.b914462a.svg",
+    "static/media/PythonLogo.svg": "/static/media/PythonLogo.e6d7dc73.svg",
+    "static/media/psLogo.svg": "/static/media/psLogo.21b3c1e0.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.1a4ef639.js",
+    "static/css/2.8c502dfb.chunk.css",
+    "static/js/2.8e0108c6.chunk.js",
+    "static/css/main.1cb5d599.chunk.css",
+    "static/js/main.5f1faca7.chunk.js"
+  ]
+}

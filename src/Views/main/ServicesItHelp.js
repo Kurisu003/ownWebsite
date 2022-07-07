@@ -1,14 +1,14 @@
 import React from 'react'
 import '../../style/home/homeStyle.css'
-import navColorClickHandler from '../../Components/clickHandler'
+// import navColorClickHandler from '../../Components/clickHandler'
 
-import { Link } from "react-router-dom"
+// import { Link } from "react-router-dom"
 
 function ServicesHelp(){
     return(
     <div>
         <p>
-            It Help
+        TO BE IMPLEMENTED
         </p>
     </div>
     )
